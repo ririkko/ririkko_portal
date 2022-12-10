@@ -43,20 +43,28 @@
   <h1>Login</h1>
   <html>
   <body>
-  <form action="website.html">
-  ユーザー名: <input type="text" id="username"><br>
-  パスワード: <input type="password" id="password"><br>
-  <input type="submit" value="ログイン">
-</form>
-<script>
-  if (document.getElementById("username").value == "りりっこ" &&
-      document.getElementById("password").value == "1125") {
-    window.location.href = "website.html";
-  } else {
-    alert("ユーザー名またはパスワードが正しくありません。もう一度入力してください。");
-  }
-
-</script>
+   <form>
+      <label>パスワード</label>
+      <input type="password" id="password" pattern="\d{4}" oninput="checkPassword()" />
+      <span id="message"></span>
+    </form>
+    
+    <script>
+      function checkPassword() {
+        // 入力されたパスワードを取得
+        var password = document.getElementById("password").value;
+        var messageElement = document.getElementById("message");
+    
+        // パスワードが 1125 と一致しているかどうかを判別
+        if (password == "1125") {
+          // パスワードが一致している場合は、website.html へ遷移
+          window.location.href = "website.html";
+        } else {
+          // パスワードが一致しない場合は、エラーメッセージを表示
+          messageElement.innerHTML = "パスワードが一致しません。";
+        }
+      }
+    </script>  
 
 </body>
 </html>
