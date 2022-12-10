@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script>
+      // ログイン画面からのアクセスかどうかを判定する
+      if (location.pathname === "/login.html") {
+        // ログイン画面からのアクセスの場合、次の処理を実行する
+        // (特に何もしない)
+      } else {
+        // ログイン画面からのアクセスでない場合、ログイン画面に遷移する
+        location.href = "login.html";
+      }
+    </script>
+    ...
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+　<meta charset="utf-8">
+  <title>りり森ポータル</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <script>
+    if (document.referrer != "http://www.example.com/login.html") {
+      window.location.href = "http://www.example.com/login.html";
+    }
+  </script>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <h1>りり森ポータル</h1>
+  <p id="time">
+    現在時刻:
+    <span id="hour"></span>:<span id="minute"></span>
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec varius enim vel nisi imperdiet, in imperdiet elit egestas.
+  </p>
+  <img src="ririmori_homepage.png" alt="My image">
+  <a href="https://sites.google.com/view/ririmori-tsushin/%E3%83%9B%E3%83%BC%E3%83%A0">Visit my website</a>
+ <script>
+  // 現在の日時を取得する
+  function updateTime() {
+    var date = new Date();
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+    var second = date.getSeconds();
+
+    // 日時を2桁の数字にフォーマットする
+    hour = ('0' + hour).slice(-2);
+    minute = ('0' + minute).slice(-2);
+    second = ('0' + second).slice(-2);
+
+    // HTMLを更新する
+    document.getElementById('hour').innerHTML = hour;
+    document.getElementById('minute').innerHTML = minute;
+    document.getElementById('second').innerHTML = second;
+  }
+
+    // 日時を1分毎に更新する
+    setInterval(updateTime, 600000);
+
+    // 初回の日時を更新する
+    updateTime();
+  </script>
+
+
+</body>
+</html>
