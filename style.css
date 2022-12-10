@@ -37,3 +37,21 @@ p {
   background-color: #fff;
   border-radius: 5px;
 }
+
+/* Twitter のタイムラインを横並びで表示 */
+.twitter-timeline {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* YouTube の動画を中央寄せ */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* セクションタイトルを大きく表示 */
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
