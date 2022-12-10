@@ -44,15 +44,16 @@
   <html>
   <body>
     <form action="website.html">
-      ユーザー名: <input type="text" name="username"><br>
-      パスワード: <input type="password" name="password"><br>
-      <input type="submit" value="ログイン">
-    </form>
-    <script>
-      if (document.getElementsByName("username")[0].value == "りりっこ" &&
-          document.getElementsByName("password")[0].value == "1125") {
-        window.location.href = "website.html";
-      }
-    </script>
+  ユーザー名: <input type="text" id="username"><br>
+  パスワード: <input type="password" id="password"><br>
+  <input type="submit" value="ログイン">
+</form>
+<script>
+  if (document.getElementById("username").value == "りりっこ" &&
+      document.getElementById("password").value == "1125") {
+    window.location.href = "website.html";
+  }
+</script>
+
 </body>
 </html>
