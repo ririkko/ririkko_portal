@@ -65,3 +65,22 @@ h2 {
 iframe {
   width: 50%;
 }
+/* レスポンシブ */
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
