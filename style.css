@@ -55,3 +55,7 @@ h2 {
   font-size: 1.5em;
   margin: 1em 0;
 }
+* Twitter と YouTube を分ける */
+.twitter-timeline, iframe {
+  width: 50%;
+}
