@@ -4,6 +4,7 @@ body {
   background-color: #f5f5f5;
 }
 h1 {
+  margin-top: 50px;
   color: #333;
 }
 nav {
@@ -19,6 +20,8 @@ nav {
   right: 0;
   background-color: #333;
 }
+
+
 nav a {
   display: inline-block;
   margin-right: 20px;
@@ -33,17 +36,26 @@ nav a:hover {
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
+  padding: 0px;
 }
-
 #time span {
   color: #333;
   font-weight: bold;
 }
+
 p {
   margin-top: 30px;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
+
+}
+
+/* アイコンを右寄せ */
+img {
+  display: block;
+  float: right;
+  margin: 0;
 }
 
 /* Twitter のタイムラインを横並びで表示 */
@@ -91,4 +103,3 @@ iframe {
     font-size: 16px;
   }
 }
-
