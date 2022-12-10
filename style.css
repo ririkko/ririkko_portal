@@ -6,6 +6,11 @@ body {
 h1 {
   color: #333;
 }
+nav {
+  margin-top: 0px;
+  padding: 20px;
+  border-radius: 0px;
+}
 
 nav {
   position: fixed;
