@@ -39,7 +39,9 @@ p {
 }
 
 /* Twitter のタイムラインを横並びで表示 */
-.twitter-timeline {
+.twitter-timeline1,
+.twitter-timeline2,
+.twitter-timeline3 {
   display: inline-block;
   margin: 0 10px;
 }
@@ -55,7 +57,11 @@ h2 {
   font-size: 1.5em;
   margin: 1em 0;
 }
-* Twitter と YouTube を分ける */
-.twitter-timeline, iframe {
+
+/* Twitter と YouTube を分ける */
+.twitter-timeline1,
+.twitter-timeline2,
+.twitter-timeline3,
+iframe {
   width: 50%;
 }
