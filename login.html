@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -37,6 +38,17 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    
+     @media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input[type="password"], input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+    
   </style>
 </head>
 <body>
