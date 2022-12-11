@@ -60,18 +60,34 @@ img {
 }
 
 /* Twitter のタイムラインを横並びで表示 */
-.twitter-timeline1,
-.twitter-timeline2,
-.twitter-timeline3 {
-  display: inline-block;
-  margin: 0 10px;
+.tweets {
+  display: flex;
+  margin-top: 50px;
+  padding: 20px;
 }
+
 
 /* YouTube の動画を中央寄せ */
 iframe {
   display: block;
   margin: 0 auto;
 }
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* セクションタイトルを大きく表示 */
 h2 {
@@ -81,18 +97,23 @@ h2 {
   padding: 20px;
 }
 
-/* Twitter と YouTube を分ける */
-.twitter-timeline1,
-.twitter-timeline2,
-.twitter-timeline3,
-iframe {
-  width: 50%;
-}
+
 /* レスポンシブ */
 @media (max-width: 600px) {
   body {
     font-size: 12px;
+    
   }
+
+  .tweets {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+
+
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
