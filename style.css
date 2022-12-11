@@ -67,6 +67,12 @@ img {
   padding: 20px;
 }
 
+.tweets a{
+  display: flex;
+  margin-top: 50px;
+  padding: 20px;
+}
+
 
 /* YouTube の動画を中央寄せ */
 iframe {
@@ -77,16 +83,10 @@ iframe {
 .video {
   width: 100%;
   position: relative;
-  padding-top: 56.25%;
+  padding-top: 0%;
 }
 
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 
 
@@ -102,8 +102,7 @@ h2 {
 /* レスポンシブ */
 @media (max-width: 600px) {
   body {
-    font-size: 12px;
-    
+    font-size: 12px;   
   }
 
   .tweets {
@@ -113,7 +112,20 @@ h2 {
     border-radius: 5px;
     flex-direction: column;
   }
+  
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
+  .video {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+  }
 
 }
 
@@ -121,6 +133,7 @@ h2 {
   body {
     font-size: 14px;
   }
+
 }
 
 @media (min-width: 800px) {
