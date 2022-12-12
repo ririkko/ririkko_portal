@@ -65,6 +65,8 @@ img {
   margin-top: 50px;
   padding: 20px;
   padding-top: 0px;
+  margin-left: auto;
+	margin-right: auto;
 }
 
 .tweets a{
