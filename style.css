@@ -61,20 +61,13 @@ img {
 
 /* Twitter のタイムラインを横並びで表示 */
 .tweets {
-  display: flex;
+  display: block;
   margin-top: 50px;
   padding: 20px;
   padding-top: 0px;
   margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
 }
-
-.tweets a{
-  display: flex;
-  margin-top: 50px;
-  padding: 20px;
-}
-
 
 /* YouTube の動画を中央寄せ */
 iframe {
