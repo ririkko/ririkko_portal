@@ -27,13 +27,27 @@
   <!--今日は何の日-->
 <h2 id="day">今日のイベント</h2>
 <script>
-  var today = new Date();
-  if (today.getDay() === 4) {
-    document.write("ゆりめりヴァイナルミュージックの日です");
-  }
-  else{
-    document.write("今日のイベントはありません");
-  }
+//standfm処理用12月10日を基準とする
+var start = new Date("2022-12-10");
+//イベントごとに更新する
+var target = new Date("2022-12-23");
+//今日の日付を取得
+var today = new Date();
+// 「ヴァイナルミュージックの日です」を表示する
+if (today.getDay() === 4) {
+  document.write("ヴァイナルミュージックの日です");
+}
+// 「standfmの日です」を表示する
+else if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
+  document.write("standfmの日です");
+}else{
+  document.write("イベントはありません");
+}
+//ここはイベントごとに更新する
+// 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
+if (today.toDateString() === target.toDateString()) {
+  document.write("「下北沢DY CUBE」でのスリーマンライブ出演");
+}
 </script>
   
  <h2>About this website</h2>
