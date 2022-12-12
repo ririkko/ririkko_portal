@@ -56,8 +56,7 @@ p {
 /* アイコンを右寄せ */
 img {
   display: block;
-  float: right;
-  margin: 0;
+  margin: auto;
 }
 
 /* Twitter のタイムラインを横並びで表示 */
