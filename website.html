@@ -24,6 +24,18 @@
     <span id="hour"></span>:<span id="minute"></span>
   </p>
   
+  <!--今日は何の日-->
+<h2 id="day">今日のイベント</h2>
+<script>
+  var today = new Date();
+  if (today.getDay() === 4) {
+    document.write("ゆりめりヴァイナルミュージックの日です");
+  }
+  else{
+    document.write("今日のイベントはありません");
+  }
+</script>
+  
  <h2>About this website</h2>
   <a class="top">このサイトは試験的に作られたサイトです。</a>
 
