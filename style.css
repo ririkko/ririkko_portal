@@ -65,6 +65,10 @@ img {
   margin-top: 0px;
   padding: 20px;
 }
+.twitter-timeline{
+  display:inline-block
+}
+
 /* YouTube の動画を中央寄せ */
 iframe {
   display: block;
