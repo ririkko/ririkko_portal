@@ -65,8 +65,12 @@ img {
   margin-top: 0px;
   padding: 20px;
 }
-.twitter-timeline{
-  display:inline-block
+
+.Tweet2 {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
 }
 
 /* YouTube の動画を中央寄せ */
