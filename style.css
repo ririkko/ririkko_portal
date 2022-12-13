@@ -67,10 +67,12 @@ img {
 }
 
 .Tweet2 {
-  display: block;
-  margin: 0 auto;
-  width: 400px;
-  height: 600px;
+  position: absolute;
+    visibility: visible;
+    height: 600px;
+    display: block;
+    width: 400px;
+  
 }
 
 /* YouTube の動画を中央寄せ */
