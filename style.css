@@ -105,15 +105,7 @@ h2 {
   padding: 3px;
 }
 
-footer{
-  background-color: #333;
-  height: 100px;
-  text-align:center;
-  color: #fff;
-  height:60px;
-  line-height:60px;
 
-}
 
 /* レスポンシブ */
 @media (max-width: 400px) {
@@ -168,3 +160,15 @@ footer{
     font-size: 16px;
   }
 }
+  
+  
+.footer{
+  background-color: #333;
+  height: 100px;
+  text-align:center;
+  color: #fff;
+  height:60px;
+  line-height:60px;
+
+}  
+  
