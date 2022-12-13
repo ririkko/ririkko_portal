@@ -117,8 +117,11 @@ h2 {
   }
   
   .Tweet2 {
-    display: block;
-  margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
   }
   
   .video iframe {
