@@ -106,6 +106,17 @@ h2 {
 }
 
 /* レスポンシブ */
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;   
+  }
+  .Tweets {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+
 @media (max-width: 600px) {
   body {
     font-size: 12px;   
@@ -117,14 +128,6 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     flex-direction: column;
-  }
-  
-  .Tweet2 {
-    position: absolute;
-    visibility: visible;
-    height: 600px;
-    display: block;
-    width: 400px;
   }
   
   .video iframe {
