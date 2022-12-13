@@ -116,6 +116,11 @@ h2 {
     flex-direction: column;
   }
   
+  .Tweet2 {
+    display: block;
+  margin: 0 auto;
+  }
+  
   .video iframe {
     position: absolute;
     top: 0;
