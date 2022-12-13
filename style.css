@@ -163,12 +163,12 @@ h2 {
   
   
 .footer{
-  background: #333;
-  height: 100px;
-  text-align:center;
-  color: #fff;
-  height:60px;
-  line-height:60px;
-
+  background-color: #333;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    margin: 1em 0;
 }  
   
