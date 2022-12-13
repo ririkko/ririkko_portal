@@ -101,6 +101,19 @@ h2 {
   border-top:1px solid#333;
 }
 
+footer{
+  background-color: #333;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    margin: 1em 0;
+}  
+
+
+
+
 #day{
   padding: 3px;
 }
@@ -162,13 +175,5 @@ h2 {
 }
   
   
-.footer{
-  background-color: #333;
-    height: 100px;
-    text-align: center;
-    color: #fff;
-    height: 60px;
-    line-height: 60px;
-    margin: 1em 0;
-}  
+
   
