@@ -261,13 +261,16 @@ details li{
     font-size: 16px;
   }
   
-    .bx-wrapper{
+  .bx-wrapper{
     width: 400px;
     height: auto;
     margin: auto;
   }
   .oshi_title{
     background:#009944;
+    color: #fff;
+    font-size: 25px;
+    font-weight:bold;
   }
   .oshi_subtitle{
     margin:auto;
@@ -280,7 +283,7 @@ details li{
     border: dashed 2px white;
     text-align: left;
     margin: 2em auto;
-  }
+}
 }
   
   
