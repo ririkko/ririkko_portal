@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>りり森ポータル</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <script>
+    if (document.referrer != "https://ririkko.github.io/ririkko_portal/RirikkoForest.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/website.html") {
+      window.location.href = "https://ririkko.github.io/ririkko_portal/login.html";
+    }
+  </script>
+  <nav>
+    <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
+    <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
+    <a href="#">Contact</a>
+  </nav>
+  <h1>りり森ポータル</h1>
+  <p id="time">
+    現在時刻:
+    <span id="hour"></span>:<span id="minute"></span>
+  </p>
+
+<!--りり森通信電子版-->
+  <h2>りり森通信電子版</h2>
+  <div class = "RIRIMORI">
+    <a href="https://sites.google.com/view/ririmori-tsushin/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0" class="site">
+      <img width="200" src="img/RIRIMORI.png" alt="サイト">
+    </a>
+  </div>
+  <!--youtube埋め込み-->
+  <h2>Sound landscape</h2>
+  <div class = "video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9O2GZHyp_e8" title="YouTube video player" frameborder="0" z-index="-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  
+  <script>
+  // 現在の日時を取得する
+  function updateTime() {
+    var date = new Date();
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+    
+
+    // 日時を2桁の数字にフォーマットする
+    hour = ('0' + hour).slice(-2);
+    minute = ('0' + minute).slice(-2);
+    
+
+    // HTMLを更新する
+    document.getElementById('hour').innerHTML = hour;
+    document.getElementById('minute').innerHTML = minute;
+    
+  }
+
+    // 日時を1分毎に更新する
+    setInterval(updateTime, 1000);
+
+    // 初回の日時を更新する
+    updateTime();
+  </script>
+  
+<footer>
+  <a class="footer">footer</a>
+</footer>
+
+</body>
+</html>
