@@ -92,6 +92,14 @@ iframe {
   padding-top: 0%;
 }
 
+summary{
+  font-size: 1.1em;
+  margin: 1em 0;
+  padding: 10px;
+  border-top:1px solid#333;
+  background: #d6ebff;
+  
+}
 
 
 
@@ -103,6 +111,16 @@ h2 {
   background-color: #fff;
   padding: 20px;
   border-top:1px solid#333;
+}
+
+ .blog_title{
+  padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #90ee90;
+    box-shadow: 0px 0px 0px 10px #90ee90;
+    border: dashed 2px white;
+    text-align: center;
+    margin: 2em auto;
 }
 
 footer{
@@ -153,7 +171,7 @@ details li{
   width: 260px;/* 紙の横幅 100%にすると全幅表示に */
   padding: 15px;
   margin: 2em auto;
-  background:#009944;/* 紙の色 */
+  background:#90ee90;/* 紙の色 */
   color: #000;/* 文字色 */
   box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(0deg);
   word-break: break-all;
@@ -270,11 +288,18 @@ details li{
     height: auto;
     margin: auto;
   }
+
   .oshi_title{
-    background:#009944;
-    color: #fff;
-    font-size: 25px;
+    background:#90ee90;
+    font-size: 20px;
     font-weight:bold;
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+ 
+    box-shadow: 0px 0px 0px 10px #90ee90;
+    border: dashed 2px white;
+    text-align: center;
+    margin: 2em auto;
   }
   .oshi_subtitle{
     margin:auto;
@@ -288,6 +313,7 @@ details li{
     text-align: left;
     margin: 2em auto;
 }
+  
 }
   
   
