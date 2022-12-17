@@ -53,6 +53,10 @@ p {
 
 }
 
+li{
+  list-style:none
+}
+
 /* アイコンを右寄せ */
 img {
   display: block;
