@@ -186,7 +186,7 @@ details li{
    height: 35px;
    margin: -25px auto 0;
    background: rgba(251, 234, 144, 0.5);/* テープの色 */
-   transform: rotate(0deg);
+   transform: rotate(2deg);
    opacity: 0.9;
 }
 .oshi_title {
