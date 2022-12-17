@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>りり森ポータル</title>
   <link rel="stylesheet" href="style.css">
-  
+  <!--ここから更新-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+<!--ここまで-->
 </head>
 <body>
-  
+ 
   <nav>
-    <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
-    <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
-    <a href="#">Contact</a>
+    <a href="website.html">Home</a>
+    <a href="RirikkoForest.html">Ririkko Forest</a>
+    <a href="Blog.html">Blog</a>
   </nav>
   <h1>りり森ポータル</h1>
   <p id="time">
     現在時刻:
     <span id="hour"></span>:<span id="minute"></span>
   </p>
-
     <!--りり森ブログ-->
     <h2>りり森ブログ🌳</h2>
     <details open>
@@ -29,38 +41,68 @@
     <details open> 
         <summary>2022年</summary>
         <!--2022年12月号-->
-    </details>
+        <li> </li>
+        <div class="oshi">
+        <div class="oshi_tape"> </div>
+        <p class="oshi_title">12月号　推し活掲示板</p>
+        <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
+        <p class="oshi_main">こちらは、クイーンズスクエア横浜です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。</p>
+        <div class="slider">
+            <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+            <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+            <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+        </div>  
+        </div>
+        
+          
+          <li> </li>
+            <div class="oshi">
+            <div class="oshi_tape"> </div>
+            <p class="oshi_title">12月号　推し活掲示板</p>
+            <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
+            <p class="oshi_main">こちらは、クイーンズスクエア横浜です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です！下の写真は、ボリスさんが12月15日に訪れ撮影しました！ツリーがとても綺麗に輝いてますね！<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。</p>
+            <div class="slider">
+                <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+                <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+                <img width="200" src="C:\Users\fumic\Downloads\ririkko_portal-main\ririkko_portal-main\img\Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+            </div>    
+            </div>
+            <!--2022年12月号-->
+</details>
 
-  
+
+
+
   <script>
-  // 現在の日時を取得する
-  function updateTime() {
-    var date = new Date();
-    var hour = date.getHours();
-    var minute = date.getMinutes();
-    
-
-    // 日時を2桁の数字にフォーマットする
-    hour = ('0' + hour).slice(-2);
-    minute = ('0' + minute).slice(-2);
-    
-
-    // HTMLを更新する
-    document.getElementById('hour').innerHTML = hour;
-    document.getElementById('minute').innerHTML = minute;
-    
-  }
-
-    // 日時を1分毎に更新する
-    setInterval(updateTime, 1000);
-
-    // 初回の日時を更新する
-    updateTime();
-  </script>
+    // 現在の日時を取得する
+    function updateTime() {
+      var date = new Date();
+      var hour = date.getHours();
+      var minute = date.getMinutes();
+      var second = date.getSeconds();
   
-<footer>
-  <a class="footer">footer</a>
-</footer>
-
-</body>
-</html>
+      // 日時を2桁の数字にフォーマットする
+      hour = ('0' + hour).slice(-2);
+      minute = ('0' + minute).slice(-2);
+      second = ('0' + second).slice(-2);
+  
+      // HTMLを更新する
+      document.getElementById('hour').innerHTML = hour;
+      document.getElementById('minute').innerHTML = minute;
+      document.getElementById('second').innerHTML = second;
+    }
+  
+      // 日時を1分毎に更新する
+      setInterval(updateTime, 1000);
+  
+      // 初回の日時を更新する
+      updateTime();
+    </script>
+    
+  <footer>
+    <a class="footer">&copy;Ririkko</a>
+  </footer>
+  
+  </body>
+  </html>
+ 
