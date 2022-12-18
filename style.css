@@ -176,6 +176,42 @@ th {
   color: #fff;
 }
 
+/*スクロールボックス*/
+.box {
+  width: 100%;                /* 横幅を200pxに指定 */
+  height: 200px;               /* 横幅を200pxに指定 */
+  border: 1px solid #000;      /* わかりやすくボーダーを引く */
+  overflow-y: scroll;          /* 縦方向にスクロール可能にする */
+  background: #FFF;
+}
+
+/*ゆりめりNEWS用タイトル付き*/
+.box26 {
+  position: relative;
+  margin: 2em 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
+}
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #95ccff;
+  font-weight: bold;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
+}
+
 /*遊び*/
 .demo_item{
 	width: 50px;
@@ -272,7 +308,13 @@ footer{
     margin: 1em 0;
 }  
 
-
+#yurimeri_news{
+  padding: 3px;
+  background:#e6df57;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
 
 
 #day{
