@@ -212,6 +212,10 @@ th {
   padding: 0;
 }
 
+.news{
+  text-align: left;
+}
+
 /*遊び*/
 .demo_item{
 	width: 50px;
