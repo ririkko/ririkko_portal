@@ -158,6 +158,19 @@ h2 {
   border: 1px dashed white;
 }
 
+/*テーブル*/
+table {
+  border-collapse: collapse;
+  width: 100%; /* 幅 */
+}
+th, td {
+  padding: 5px 15px;
+  border: solid 1px #465c1a;
+}
+th {
+  background-color: #6f8d33;
+  color: #fff;
+}
 
 /*遊び*/
 .demo_item{
