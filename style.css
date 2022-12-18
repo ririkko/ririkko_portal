@@ -123,6 +123,30 @@ h2 {
     margin: 2em auto;
 }
 
+.tweet_1{
+  background:#55acee;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+
+}
+
+.youtube{
+  background:#ee5555;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+.tik{
+  background:#c055ee;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+
+
 footer{
   background-color: #333;
     height: 100px;
