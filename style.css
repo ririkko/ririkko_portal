@@ -144,6 +144,21 @@ h2 {
   border-radius: 5px; 
   border: 1px dashed white;
 }
+
+.denshi{
+  background:#6f8d33;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+.sound_landscape{
+  background:#eeb855;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+
 /*遊び*/
 .demo_item{
 	width: 50px;
