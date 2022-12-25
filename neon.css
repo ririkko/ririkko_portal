@@ -42,7 +42,7 @@ background:black;
 
 textarea#textInput {
   height: 25px;
-  width: 14.8rem;
+  width: 14em;
   font-family: sans-serif;
   margin-bottom: -10px;
   resize: none;
@@ -62,7 +62,7 @@ button#button {
 
 select#fontInput {
   font-size: 1em;
-  width: 15.1rem;
+  width: 12rem;
   font-family: sans-serif;
   margin-bottom: 10px;
   padding: 5px 10px;
@@ -83,7 +83,7 @@ button#fontButton {
 }
 
 input#sizeInput {
-  width: 14.9rem;
+  width: 12rem;
   margin-bottom: 10px;
 }
 
@@ -108,7 +108,7 @@ button#colorButton {
   font-size: 1em;
   font-family: sans-serif;
   padding: 5px 10px;
-  margin-right: 4.8rem;
+  margin-right: 3em;
   margin-bottom: 10px;
   border: none;
   border-radius: 4px;
@@ -126,7 +126,7 @@ button#animationColorButton {
   font-family: sans-serif;
   padding: 5px 10px;
   margin-bottom: 10px;
-  margin-right: 4.7rem;
+  margin-right: 3em;
   border: none;
   border-radius: 4px;
   background-color: #333;
@@ -135,7 +135,7 @@ button#animationColorButton {
 }
 
 input#animationDurationInput {
-  width: 27em;
+  width: 23.6em;
   margin-bottom: 10px;
 }
 
@@ -149,8 +149,6 @@ button#animationDurationButton {
   color: #fff;
   cursor: pointer
 }
-
-
 
 
 
