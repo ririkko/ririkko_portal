@@ -2,20 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Customizable Neon Text</title>
   <link rel="stylesheet" href="neon.css">
-<https://fonts.googleapis.com/css2?family=Train+One&display=swap' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div id="neon">
     <span>Enter text here</span>
   </div>
+
 <div id="neon2">
-  <input id="textInput" type="text">
+  <textarea id="textInput"></textarea>
   <button id="button">Update Text</button><br>
+  <select id="fontInput">
+    <option value="'Train One', cursive">Train One</option>
+    <option value="'Nico Moji'">Nico Moji</option>
+    <option value="'Nikukyu'">Nikukyu</option>
+    <option value="'Hannari', monospace">Hannari</option>
+    <option value="'Pixel Operator', monospace">Pixel Operator</option>
+    <option value="'VT323', monospace">VT323</option>
+    <option value="'Audiowide', cursive">Audiowide</option>
+  </select>
+  <button id="fontButton">Update Font</button><br>
+  <input id="sizeInput" type="range" min="10" max="72" value="24">
+  <button id="sizeButton">Update Size</button><br>
   <input id="colorInput" type="color">
-  <button id="colorButton">Update Color</button>
+  <button id="colorButton">Update Color</button><br><br>
+  <input id="animationColorInput" type="color">
+  <button id="animationColorButton">Update Animation Color</button><br>
+  <input id="animationDurationInput" type="range" min="0.1" max="10" value="-1">
+  <button id="animationDurationButton">Update Animation Duration</button><br>
+
+  
+
 </div>
   <script src="neon.js"></script>
 
