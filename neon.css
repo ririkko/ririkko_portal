@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
 #neon {
   margin-top:20rem;
   font-size: 70px;
@@ -7,15 +8,37 @@
   font-family: 'Train One', cursive;
   color: #00FF00;
   text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
-  animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 4s ease-in-out infinite alternate;
 }
+
 
 @keyframes neon {
   to {
-    text-shadow: 0 0 5px #000000, 0 0 10px #FFFF00, 0 0 15px #FFFF00, 0 0 20px #FFFF00, 0 0 25px #FFFF00, 0 0 30px #FFFF00, 0 0 35px #FFFF00;
-    animation: neon 2.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFFF00, 0 0 20px #FFFF00, 0 0 25px #FFFF00, 0 0 30px #FFFF00, 0 0 35px #FFFF00;
   }
+  }
+
+
+#neon2{
+  position: fixed; /* 要素の位置を固定する */
+bottom: 0; /* 基準の位置を画面の一番下に指定する */
+margin-bottom: 1rem;
 }
+
+
+#fontInput {
+  font-size: 18px;
+}
+
+#sizeInput {
+  width: 100%;
+}
+
+#animationColorInput {
+  width: 100%;
+}
+
+
 body{
 background:black;
 }
