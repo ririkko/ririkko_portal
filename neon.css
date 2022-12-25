@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+#neon {
+  margin-top:20rem;
+  font-size: 70px;
+  line-height: 48px;
+  text-align: center;
+  font-family: 'Train One', cursive;
+  color: #00FF00;
+  text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  to {
+    text-shadow: 0 0 5px #000000, 0 0 10px #FFFF00, 0 0 15px #FFFF00, 0 0 20px #FFFF00, 0 0 25px #FFFF00, 0 0 30px #FFFF00, 0 0 35px #FFFF00;
+    animation: neon 2.5s ease-in-out infinite alternate;
+  }
+}
+body{
+background:black;
+}
+
+#neon2{
+  margin-top:60px;
+ text-align: center;
+}
+
+
+@media (max-width: 400px) {
+#neon {
+  margin-top:10rem;
+  font-size: 50px;
+}
+}
+
+/* レスポンシブ */
+ @media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input[type="password"], input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
