@@ -101,6 +101,7 @@ button#sizeButton {
 
 input#colorInput {
   margin-bottom: 10px;
+  width: 3em;
 }
 
 button#colorButton {
@@ -119,6 +120,7 @@ button#colorButton {
 
 input#animationColorInput {
   margin-bottom: 10px;
+  width: 3em;
 }
 
 button#animationColorButton {
