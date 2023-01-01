@@ -11,8 +11,11 @@
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <script>
-$(function() {
-    $('.slider').bxSlider();
+   $(function() {
+    $('.slider').bxSlider({
+      auto: true, /* 追加部分 */
+      controls: false, /* 追加部分 */
+    });
   });
 </script>
 <!--ここまで-->
