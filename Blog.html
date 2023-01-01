@@ -21,7 +21,11 @@
 <!--ここまで-->
 </head>
 <body>
- 
+ <script>
+    if (document.referrer != "https://ririkko.github.io/ririkko_portal/login.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/RirikkoForest.html"&& document.referrer != "https://ririkko.github.io/ririkko_portal/Blog.html") {
+      window.location.href = "https://ririkko.github.io/ririkko_portal/login.html";
+    }
+  </script>
   <nav>
     <a href="website.html">Home</a>
     <a href="RirikkoForest.html">Ririkko Forest</a>
