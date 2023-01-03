@@ -1,0 +1,501 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+h1 {
+  margin-top: 80px;
+  color: #333;
+}
+nav {
+  margin-top: 0px;
+  padding: 20px;
+  border-radius: 0px;
+  z-index: 2;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #999;
+}
+
+#time {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0px;
+}
+#time span {
+  color: #333;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+
+}
+
+a{
+  color:inherit
+}
+
+li{
+  list-style:none
+}
+
+/* アイコンを右寄せ */
+img {
+  display: block;
+  margin: auto;
+}
+
+/* Twitter のタイムラインを横並びで表示 */
+.tweets {
+  display: flex;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.Tweet2 {
+  
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+  
+  
+}
+
+/* YouTube の動画を中央寄せ */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-top: 0%;
+}
+
+summary{
+  font-size: 1.1em;
+  margin: 1em 0;
+  padding: 10px;
+  border-top:1px solid#333;
+  background: #d6ebff;
+  
+}
+
+
+
+
+/* セクションタイトルを大きく表示 */
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+  background-color: #fff;
+  padding: 20px;
+  border-top:1px solid#333;
+}
+
+ .blog_title{
+  padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #90ee90;
+    box-shadow: 0px 0px 0px 10px #90ee90;
+    border: dashed 2px white;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.tweet_1{
+  background:#55acee;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+
+}
+
+.youtube{
+  background:#ee5555;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+.tik{
+  background:#c055ee;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+.denshi{
+  background:#6f8d33;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+.sound_landscape{
+  background:#eeb855;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+/*テーブル*/
+table {
+  border-collapse: collapse;
+  width: 100%; /* 幅 */
+}
+th, td {
+  padding: 5px 15px;
+  border: solid 1px #465c1a;
+}
+th {
+  background-color: #6f8d33;
+  color: #fff;
+}
+
+/*スクロールボックス*/
+.box {
+  width: 100%;                /* 横幅を200pxに指定 */
+  height: 200px;               /* 横幅を200pxに指定 */
+  border: 1px solid #000;      /* わかりやすくボーダーを引く */
+  overflow-y: scroll;          /* 縦方向にスクロール可能にする */
+  background: #FFF;
+}
+
+/*ゆりめりNEWS用タイトル付き*/
+.box26 {
+  position: relative;
+  margin: 2em 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  border: solid 3px  #e6df57;
+  border-radius: 8px;
+}
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #e8d75c;
+  font-weight: bold;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.news{
+  text-align: left;
+}
+
+/*遊び*/
+.demo_item{
+	width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url("img/icon/n0477.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    
+
+}
+.demo_item.anime{
+    animation-name: upDown;
+    animation-iteration-count: infinite;
+    animation-duration: 0.1s;
+    animation-direction: alternate;
+    animation-timing-function: steps(2);
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+
+.demo_stage{
+    position: relative;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+    display: block;
+	border-bottom: solid #777 1px;
+}
+
+
+.demo_wrap{
+	display: block;
+    position: absolute;
+    top: 20px;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+	margin-right: -25px;
+}
+
+.demo_wrap[data-order="left"] {
+  animation-name: GoLeft;
+}
+.demo_wrap[data-order="right"] {
+  animation-name: GoRight;
+}
+
+[data-order="right"] > .demo_item {
+  transform: rotateY(180deg);
+}
+
+@keyframes GoLeft {
+  0% {
+      right: 10%;
+  }
+  100% {
+      right: 90%;
+  }
+}
+@keyframes GoRight {
+  0% {
+      right: 90%;
+  }
+  100% {
+      right: 10%;
+  }
+}
+
+@keyframes upDown {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: 3px;
+  }
+}
+
+
+/*遊び*/
+
+footer{
+  background-color: #333;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    margin: 1em 0;
+}  
+
+#yurimeri_news{
+  background:#e6df57;
+  color: #fff;
+  border-radius: 5px; 
+  border: 1px dashed white;
+}
+
+
+#day{
+  padding: 3px;
+}
+
+.bx-wrapper{
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+.oshi_title{
+  background:#fff;
+}
+
+
+/* レスポンシブ */
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;   
+  }
+  .Tweets {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+  }
+ /*ここから更新blog本文のデザイン */
+#wrap {
+  padding: 3px;
+}
+details li{
+  list-style: none; 
+}
+.oshi {
+  width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+  padding: 15px;
+  margin: 2em auto;
+  background:#90ee90;/* 紙の色 */
+  color: #000;/* 文字色 */
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(0deg);
+  word-break: break-all;
+}
+.oshi p {
+   margin: 0; 
+   padding: 0;
+   font-size: 0.9em;
+}
+.oshi_tape {
+   width: 50%;
+   height: 35px;
+   margin: -25px auto 0;
+   background: rgba(251, 234, 144, 0.5);/* テープの色 */
+   transform: rotate(2deg);
+   opacity: 0.9;
+}
+.oshi_title {
+   text-align: center;
+   font-size: 1.3em!important;
+   margin-top: 10px!important;
+}
+.oshi_subtitle {
+   text-align: center;
+   font-size: 0.7em!important;
+   margin-bottom: 1em!important;
+}
+
+.oshi_main{
+  text-align: left;
+  margin: 2em auto;
+}
+
+
+
+.wrap {
+  margin: 2em 0;
+  padding: 0;
+}
+
+.wrap summary {
+  display: block;
+  padding : 8px;
+  color: #fff;
+  font-weight: bold;
+  background: #333;
+  cursor: pointer;
+  overflow: 0;
+}
+
+.wrap input[type="checkbox"] {
+  display: none;
+}
+
+.wrap .oshi {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10;
+  z-index: 1;
+}
+
+.switch:checked + .oshi {
+  height: auto;
+  padding: 8px;
+}
+/*ここまで */
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;   
+  }
+
+  .tweets {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+  
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .bx-wrapper{
+    width: 400px;
+    height: auto;
+    margin: auto;
+  }
+
+  .oshi_title{
+    background:#90ee90;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+ 
+    box-shadow: 0px 0px 0px 10px #90ee90;
+    border: dashed 2px white;
+    text-align: center;
+    margin: 2em auto;
+  }
+  .oshi_subtitle{
+    margin:auto;
+  }
+  .oshi_main{
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #d6ebff;
+    box-shadow: 0px 0px 0px 10px #d6ebff;
+    border: dashed 2px white;
+    text-align: left;
+    margin: 2em auto;
+}
+  
+}
