@@ -6,14 +6,15 @@
   <title>りり森ポータル</title>
   <link rel="stylesheet" href="style.css">
   <!--ここから更新-->
-  <link rel="stylesheet" href="jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <script>
-   jQuery(document).ready(function($){
+   $(function() {
     $('.slider').bxSlider({
-
+      auto: true, /* 追加部分 */
+      controls: false, /* 追加部分 */
     });
   });
 </script>
@@ -50,11 +51,11 @@
         <p class="oshi_title">12月号　推し活掲示板</p>
         <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
         <p class="oshi_main">こちらは、クイーンズスクエア横浜です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。</p>
-        <ul class="slider">
-            <li><img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA"></li>
-            <li><img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA"></li>
-            <li><img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA"></li>
-        </ul>  
+        <div class="slider">
+            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+        </div>  
         </div>
          <!--2022年12月号E-->
           
@@ -94,4 +95,3 @@
   
   </body>
   </html>
- 
