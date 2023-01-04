@@ -548,7 +548,112 @@ summary {
 
 
 }
+/* レスポンシブ */
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
 
+  .Tweets {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+  /*ここから更新blog本文のデザイン */
+  #wrap {
+    padding: 3px;
+  }
+
+  details li {
+    list-style: none;
+  }
+
+  .oshi {
+    width: 260px;
+    /* 紙の横幅 100%にすると全幅表示に */
+    padding: 15px;
+    margin: 2em auto;
+    background: #90ee90;
+    /* 紙の色 */
+    color: #000;
+    /* 文字色 */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.03);
+    transform: rotate(0deg);
+    word-break: break-all;
+  }
+
+  .oshi p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+  .oshi_tape {
+    width: 50%;
+    height: 35px;
+    margin: -25px auto 0;
+    background: rgba(251, 234, 144, 0.5);
+    /* テープの色 */
+    transform: rotate(2deg);
+    opacity: 0.9;
+  }
+
+  .oshi_title {
+    text-align: center;
+    font-size: 1.3em !important;
+    margin-top: 10px !important;
+  }
+
+  .oshi_subtitle {
+    text-align: center;
+    font-size: 0.7em !important;
+    margin-bottom: 1em !important;
+  }
+
+  .oshi_main {
+    text-align: left;
+    margin: 2em auto;
+  }
+
+
+
+  .wrap {
+    margin: 2em 0;
+    padding: 0;
+  }
+
+  .wrap summary {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    background: #333;
+    cursor: pointer;
+    overflow: 0;
+  }
+
+  .wrap input[type="checkbox"] {
+    display: none;
+  }
+
+  .wrap .oshi {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10;
+    z-index: 1;
+  }
+
+  .switch:checked+.oshi {
+    height: auto;
+    padding: 8px;
+  }
+
+  /*ここまで */
+}
 
 
 
