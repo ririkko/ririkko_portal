@@ -1,97 +1,171 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>りり森ポータル</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="style.css">
-  <!--ここから更新-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<script>
-   $(function() {
-    $('.slider').bxSlider({
-      auto: true, /* 追加部分 */
-      controls: false, /* 追加部分 */
-    });
-  });
-</script>
-<!--ここまで-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>りり森ポータル</title>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
+
 <body>
- <script>
+  <script>
     if (document.referrer != "https://ririkko.github.io/ririkko_portal/login.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/website.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/RirikkoForest.html") {
       window.location.href = "https://ririkko.github.io/ririkko_portal/login.html";
     }
   </script>
-  <nav>
-    <a href="website.html">Home</a>
-    <a href="RirikkoForest.html">Ririkko Forest</a>
-    <a href="Blog.html">Blog</a>
-  </nav>
-  <h1>りり森ポータル</h1>
-  <p id="time">
-    現在時刻:
-    <span id="hour"></span>:<span id="minute"></span>
-  </p>
-    <!--りり森ブログ-->
-    <h2 class="blog_title">りり森ブログ🌳</h2>
-    <details>
-        <summary>2023年</summary>
-        coming soon
-    </details>
-    <details> 
-        <summary>2022年</summary>
-        <!--2022年12月号S-->
-        <li> </li>
-        <div class="oshi">
-        <div class="oshi_tape"> </div>
-        <p class="oshi_title">12月号　推し活掲示板</p>
-        <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
-        <p class="oshi_main">こちらは、クイーンズスクエア横浜です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。</p>
-        <div class="slider">
-            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
-            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
-            <img width="200" src="img/blog/2022/Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
-        </div>  
+  <header>
+    <nav>
+      <div class="header">
+        <h1>りり森ポータル</h1>
+      </div>
+      <a href="website.html">Home</a>
+      <a href="RirikkoForest.html">Ririkko Forest</a>
+      <a href="Blog.html">Blog</a>
+    </nav>
+  </header>
+  <!--りり森ブログ-->
+  <h2 class="blog_title">りり森ブログ🌳</h2>
+  <div class="D">2023年</div>
+  <!--2022年12月-->
+  <div class="oshi">
+    <div class="oshi_tape"> </div>
+    <p class="oshi_title">12月号　推し活掲示板</p>
+    <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
+    <p class="oshi_main">こちらは、<a
+        href="https://qsy-tqc.jp/">クイーンズスクエア横浜</a>です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。
+    </p>
+    <!-- Sliderを包むコンテナ要素 -->
+    <div class="swiper-area">
+      <div class="swiper">
+        <!-- スライド要素を包む要素 -->
+        <div class="swiper-wrapper">
+          <!-- 各スライド -->
+          <div class="swiper-slide slide1">
+            <img width="200" src="Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide2">
+            <img width="200" src="Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide3">
+            <img width="200" src="Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+
         </div>
-         <!--2022年12月号E-->
-          
-         
-</details>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!-- /swiper-area -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  </div>
+  <!--2022年12月-->
 
+  <div class="D">2022年</div>
+  <!--2022年12月-->
+  <div class="oshi">
+    <div class="oshi_tape"> </div>
+    <p class="oshi_title">12月号　推し活掲示板</p>
+    <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
+    <p class="oshi_main">こちらは、<a
+        href="https://qsy-tqc.jp/">クイーンズスクエア横浜</a>です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。
+    </p>
+    <!-- Sliderを包むコンテナ要素 -->
+    <div class="swiper-area">
+      <div class="swiper">
+        <!-- スライド要素を包む要素 -->
+        <div class="swiper-wrapper">
+          <!-- 各スライド -->
+          <div class="swiper-slide slide1">
+            <img width="200" src="Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide2">
+            <img width="200" src="Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide3">
+            <img width="200" src="Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
 
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!-- /swiper-area -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  </div>
+  <!--2022年12月-->
 
+  <!--2022年12月-->
+  <div class="oshi">
+    <div class="oshi_tape"> </div>
+    <p class="oshi_title">12月号　推し活掲示板</p>
+    <p class="oshi_subtitle">～クイーンズスクエア横浜編～（ボリスさん投稿）</p>
+    <p class="oshi_main">こちらは、<a
+        href="https://qsy-tqc.jp/">クイーンズスクエア横浜</a>です!<br>2020年12月にゆりめりのお二人がFM横浜の番組で歌った場所です!下の写真は、ボリスさんが12月15日に訪れ撮影しました!ツリーがとても綺麗に輝いてますね!<br>【場所・行き方】<br>みなとみらい線みなとみらい駅(東急東横線渋谷から直通約40分)のすぐ上です。
+    </p>
+    <!-- Sliderを包むコンテナ要素 -->
+    <div class="swiper-area">
+      <div class="swiper">
+        <!-- スライド要素を包む要素 -->
+        <div class="swiper-wrapper">
+          <!-- 各スライド -->
+          <div class="swiper-slide slide1">
+            <img width="200" src="Queen's Square YOKOHAMA_1.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide2">
+            <img width="200" src="Queen's Square YOKOHAMA_2.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
+          <div class="swiper-slide slide3">
+            <img width="200" src="Queen's Square YOKOHAMA_3.jpg" alt="Queen's Square YOKOHAMA">
+          </div>
 
-  <script>
-    // 現在の日時を取得する
-    function updateTime() {
-      var date = new Date();
-      var hour = date.getHours();
-      var minute = date.getMinutes();
-  
-      // 日時を2桁の数字にフォーマットする
-      hour = ('0' + hour).slice(-2);
-      minute = ('0' + minute).slice(-2);
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!-- /swiper-area -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  </div>
+  <!--2022年12月-->
 
-  
-      // HTMLを更新する
-      document.getElementById('hour').innerHTML = hour;
-      document.getElementById('minute').innerHTML = minute;
-    }
-  
-      // 日時を1分毎に更新する
-      setInterval(updateTime, 1000);
-  
-      // 初回の日時を更新する
-      updateTime();
-    </script>
-    
   <footer>
     <a class="footer">&copy;Ririkko</a>
   </footer>
-  
-  </body>
-  </html>
+  <!--</body>の前に貼り付け-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const mediaQueryList = window.matchMedia("(max-width: 599px)");
+    let swiper = null;
+    const initSwiper = () => {
+      if (mediaQueryList.matches) {
+        swiper = new Swiper(".swiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: "clickable",
+          },
+          loop: true,
+          autoplay: true,
+        });
+      } else {
+        if (swiper) {
+          swiper.destroy(false, true);
+        }
+      }
+    };
+
+    mediaQueryList.addEventListener("change", initSwiper);
+    initSwiper();
+  </script>
+</body>
+
+</html>
