@@ -41,7 +41,22 @@ nav a:hover {
   padding: 0px;
 }
 
+/* Twitter のタイムラインを横並びで表示 */
+.tweets {
+  display: flex;
+  margin-top: 0px;
+  padding: 20px;
+}
 
+.Tweet2 {
+  
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+  
+  
+}
 
 #time span {
   color: #333;
