@@ -1,85 +1,148 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="hkGy64eaEUmEcvT_Va9XyEZAjm54pKeRA7c1FRe3Pyc" />
+
   <title>りり森ポータル</title>
-  <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@8/swiper.min.css">
+  <link rel="stylesheet" href="style2.css">
+
 </head>
+
 <body>
-  <script>
-    if (document.referrer != "https://ririkko.github.io/ririkko_portal/login.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/website.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/Blog.html") {
-      window.location.href = "https://ririkko.github.io/ririkko_portal/login.html";
-    }
-  </script>
-  <nav>
-    <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
-    <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
-    <a href="https://ririkko.github.io/ririkko_portal/Blog.html">Blog</a>
-  </nav>
-  <h1>りり森ポータル</h1>
-  <p id="time">
-    現在時刻:
-    <span id="hour"></span>:<span id="minute"></span>
-  </p>
+  <header>
+
+    <nav>
+      <div class="header">
+        <h1>りり森ポータル</h1>
+      </div>
+      <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
+      <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
+      <a href="https://ririkko.github.io/ririkko_portal/Blog.html">Blog</a>
+    </nav>
+    <div class="l-wrapper">
+      <main>
+        <div id="demo11" class="mv01 l-section">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img1.jpg" alt=""></div>
+                  <h2 class="slide-title">~りりしぶ０~</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img2.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img3.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <article class="slide">
+                  <div class="slide-media img-cover"><img src="img4.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img5.jpg" alt=""></div>
+                  <h2 class="slide-title">下北沢DY CUBE</h2>
+                </div>
+              </div>
+            </div><!-- /swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+          </div><!-- /swiper -->
+
+
+        </div>
+
+      </main>
+    </div><!-- /wrapper -->
+
+  </header>
+
   <!--電車動かす-->
   <div class="demo_stage">
     <div class="demo_wrap" data-order="left">
-    <span class="demo_item anime"></span>
-      </div>
+      <span class="demo_item anime"></span>
+    </div>
   </div>
-<!--りり森通信電子版-->
-  <h2 class="denshi">りり森通信電子版</h2>
-  <div class = "RIRIMORI">
-    <a href="https://sites.google.com/view/ririmori-tsushin/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0" class="site">
-      <img width="200" src="img/RIRIMORI.png" alt="サイト">
-    </a>
-    <br>
-    <table border="1">
-      <tr><th>年</th><th>月</th><th>ダウンロード</th></tr>
-      <tr><td rowspan="3">2022</td><td rowspan="2">11</td><td><a href="img/ririmori_news/りり森通信１１月号.pdf" download="りり森通信11月号.pdf">りり森通信11月号</a></td></tr>
-      <tr><td><a href="img/calendar/2023ゆりめりカレンダー.pdf" download="2023ゆりめりカレンダー.pdf">2023ゆりめりカレンダー</a></td></tr>
-      <tr><td>12</td><td><a href="img/ririmori_news/りり森通信12月号.pdf" download="りり森通信12月号.pdf">りり森通信12月号</a></td></tr>
-    </table>
+  <!--りり森通信電子版-->
 
+  <h2 class="denshi">りり森通信電子版</h2>
+  <div class="RIRIMORI">
+    <a href="https://sites.google.com/view/ririmori-tsushin/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0"
+      class="site">りり森通信電子版</a>
+    <br>
+    <div class="CNT">
+      <table border="1">
+        <tr>
+          <th>年</th>
+          <th>月</th>
+          <th>ダウンロード</th>
+        </tr>
+        <tr>
+          <td rowspan="3">2022</td>
+          <td rowspan="2">11</td>
+          <td><a href="img/ririmori_news/りり森通信１１月号.pdf" download="りり森通信11月号.pdf">りり森通信11月号</a></td>
+        </tr>
+        <tr>
+          <td><a href="img/calendar/2023ゆりめりカレンダー.pdf" download="2023ゆりめりカレンダー.pdf">2023ゆりめりカレンダー</a></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><a href="img/ririmori_news/りり森通信12月号.pdf" download="りり森通信12月号.pdf">りり森通信12月号</a></td>
+        </tr>
+      </table>
+
+    </div>
   </div>
   <!--youtube埋め込み-->
   <h2 class="sound_landscape">Sound landscape</h2>
-  <div class = "video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/9O2GZHyp_e8" title="YouTube video player" frameborder="0" z-index="-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="CNT">
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9O2GZHyp_e8" title="YouTube video player"
+        frameborder="0" z-index="-1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
   </div>
-
-  
+  <footer>
+    <a class="footer">&copy;Ririkko</a>
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-  // 現在の日時を取得する
-  function updateTime() {
-    var date = new Date();
-    var hour = date.getHours();
-    var minute = date.getMinutes();
-    
-
-    // 日時を2桁の数字にフォーマットする
-    hour = ('0' + hour).slice(-2);
-    minute = ('0' + minute).slice(-2);
-    
-
-    // HTMLを更新する
-    document.getElementById('hour').innerHTML = hour;
-    document.getElementById('minute').innerHTML = minute;
-    
-  }
-
-    // 日時を1分毎に更新する
-    setInterval(updateTime, 1000);
-
-    // 初回の日時を更新する
-    updateTime();
+    const mySwiper = new Swiper('.mv01 .swiper', {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 2000,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+        waitForTransition: false,
+      },
+      followFinger: false,
+      pagination: {
+        el: '.mv01 .swiper-pagination',
+        clickable: true,
+      },
+    });
   </script>
-  
-<footer>
-  <a class="footer">&copy;Ririkko</a>
-</footer>
-
 </body>
+
 </html>
