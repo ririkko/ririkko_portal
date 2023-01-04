@@ -1,167 +1,240 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
   <meta name="google-site-verification" content="hkGy64eaEUmEcvT_Va9XyEZAjm54pKeRA7c1FRe3Pyc" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6JG8DP685R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6JG8DP685R');
-</script>
+  <!-- Google tag (gtag.js) -->
   <title>りり森ポータル</title>
-  <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@8/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
   <script>
     if (document.referrer != "https://ririkko.github.io/ririkko_portal/login.html" && document.referrer != "https://ririkko.github.io/ririkko_portal/RirikkoForest.html"&& document.referrer != "https://ririkko.github.io/ririkko_portal/Blog.html") {
       window.location.href = "https://ririkko.github.io/ririkko_portal/login.html";
     }
   </script>
-  <nav>
-    <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
-    <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
-    <a href="https://ririkko.github.io/ririkko_portal/Blog.html">Blog</a>
-  </nav>
-  <h1>りり森ポータル</h1>
-  <p id="time">
-    現在時刻:
-    <span id="hour"></span>:<span id="minute"></span>
-  </p>
-  
+  <header>
+
+
+    <nav>
+      <div class="header">
+        <h1>りり森ポータル</h1>
+      </div>
+      <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
+      <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
+      <a href="https://ririkko.github.io/ririkko_portal/Blog.html">Blog</a>
+    </nav>
+    <div class="l-wrapper">
+      <main>
+        <div id="demo11" class="mv01 l-section">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img1.jpg" alt=""></div>
+                  <h2 class="slide-title">~りりしぶ０~</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img2.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img3.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <article class="slide">
+                  <div class="slide-media img-cover"><img src="img4.JPG" alt=""></div>
+                  <h2 class="slide-title">寿長生の郷</h2>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img5.jpg" alt=""></div>
+                  <h2 class="slide-title">下北沢DY CUBE</h2>
+                </div>
+              </div>
+            </div><!-- /swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+          </div><!-- /swiper -->
+
+
+        </div>
+
+      </main>
+    </div><!-- /wrapper -->
+
+  </header>
   <!--今日は何の日-->
-<h2 id="day">今日のイベント</h2>
-<script>
-//standfm処理用12月10日を基準とする
-var start = new Date("2022-12-10");
-//イベントごとに更新する
-var target1 = new Date("2022-12-14");
-var target2 = new Date("2022-12-23");
+  <h2 id="day">今日のイベント</h2>
+  <script>
+    //standfm処理用12月10日を基準とする
+    var start = new Date("2022-12-10");
+    //イベントごとに更新する
+    var target1 = new Date("2022-12-14");
+    var target2 = new Date("2022-12-23");
 
-//今日の日付を取得
-var today = new Date();
-// 「ヴァイナルミュージックの日です」を表示する
-if (today.getDay() === 4) {
-  document.write("ヴァイナルミュージックの日です");
-}
-// 「standfmの日です」を表示する
-else if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
-  document.write("standfmの日です");
-}
-else if(today.toDateString() === target1.toDateString()){
-    document.write("今日はゆりめり新曲のクリスマスソング発表日です");
-  }
-//ここはイベントごとに更新する
-// 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
-else if (today.toDateString() === target2.toDateString()) {
-  document.write("「下北沢DY CUBE」でのスリーマンライブ出演");
-}
+    //今日の日付を取得
+    var today = new Date();
+    // 「ヴァイナルミュージックの日です」を表示する
+    if (today.getDay() === 4) {
+      document.write("ヴァイナルミュージックの日です");
+    }
+    // 「standfmの日です」を表示する
+    else if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
+      document.write("standfmの日です");
+    }
+    else if (today.toDateString() === target1.toDateString()) {
+      document.write("今日はゆりめり新曲のクリスマスソング発表日です");
+    }
+    //ここはイベントごとに更新する
+    // 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
+    else if (today.toDateString() === target2.toDateString()) {
+      document.write("「下北沢DY CUBE」でのスリーマンライブ出演");
+    }
 
-else{
-  document.write("イベントはありません");
-}
-</script>
-  
- <h2 id="day">このサイトについて</h2>
+    else {
+      document.write("イベントはありません");
+    }
+  </script>
+
+  <h2 id="day">このサイトについて</h2>
   <a class="top">このサイトは「ゆりめり」と「りりっこ」の活動をまとめたサイトです。ぜひご覧ください。</a>
-  
-  <h2 id="yurimeri_news">ゆりめりNEWS!!📢</h2>
- <div class="box">
-<!--NEWS-->
-  <div class="box26">
-    <span class="box-title">12月23日速報！</span>
-    <p class="news">ゆりめり2022年ライブ納め！<b>新曲「水曜日」発表も!!</b><br>
-      【ライブを振り返ろう！！】<br>
-      <a href="https://youtube.com/playlist?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"><b>Youtubeでライブを振り返ろう！！</b></a><br>
-      <div class = "video">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <br><a href="https://open.spotify.com/playlist/2J5uuqzC6qKlKGvqVWn5dy?si=8e9d7f36b0bc46ab"><b>Spotifyでライブを振り返ろう！！</b></a><br>
-     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2J5uuqzC6qKlKGvqVWn5dy?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<br>【セトリ @下北沢DY CUBE】<br>
-⑴<a href="https://youtu.be/Z7-tJRs5MJ8">つぎのて</a><br>
-⑵<a href="https://youtu.be/0mpO2FfQ_XQ">12/23</a><br>
-⑶<a href="https://youtu.be/F8gBOixZAJY">メトロノーム</a><br>
-⑷<a href="https://youtu.be/uGjQPsbpcjA">SING</a><br>
-⑸チキンライス(カバー)<br>
-⑹流れ星<br>
-⑺水曜日(新曲)<br>
-⑻<a href="https://youtu.be/COAdb7RVYcE">遠音</a><br>
-      <a href="https://t.co/50XC6E3JBg">配信チケット</a><br>
-    </p>
-　</div>
-<!--NEWSここまで-->
-  <!--NEWS-->
-  <div class="box26">
-    <span class="box-title">12月17日</span>
-    <p class="news">世界一受けたい授業でゆりめりのTikTokの映像が出ました！見逃し配信、TikTokでチェック!!<br>
-      <a href="https://tver.jp/lp/episodes/epvlhwwm2l?p=1289">世界一受けたい授業</a><br>
-      <a href="https://www.tiktok.com/@yurimeri/video/6843676480086543618?_r=1&_t=8YFiI5JGpqD&is_from_webapp=v1&item_id=6843676480086543618">流れた動画</a>
-      </p>
-　</div>
-<!--NEWSここまで-->
-  <!--NEWS-->
-<div class="box26">
-  <span class="box-title">12月14日</span>
-  <p class="news">12月14日「今日はクリスマスイブ」を発表しました！各種サブスクで配信中です！👇<br>
-    Yuiちゃんのツイートのコメントです「約2週間で作り上げたクリスマスソング🎄🎅強行突破でした...！
-初めてのオーケストラアレンジですがすごく素敵に仕上げることができました！✨」<br>
-    <a href="https://www.tunecore.co.jp/artists/YuriMeri">サブスクはこちらから</a>
-    </p>
-　</div>
-<!--NEWSここまで-->
-   
-</div>
 
-<!--twitter埋め込み-->
+  <h2 id="yurimeri_news">ゆりめりNEWS!!📢</h2>
+  <div class="box">
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">12月23日速報！</span>
+      <p class="news">ゆりめり2022年ライブ納め！<b>新曲「水曜日」発表も!!</b><br>
+        【ライブを振り返ろう！！】<br>
+        <a
+          href="https://youtube.com/playlist?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"><b>Youtubeでライブを振り返ろう！！</b></a><br>
+      <div class="video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <br><a
+        href="https://open.spotify.com/playlist/2J5uuqzC6qKlKGvqVWn5dy?si=8e9d7f36b0bc46ab"><b>Spotifyでライブを振り返ろう！！</b></a><br>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/2J5uuqzC6qKlKGvqVWn5dy?utm_source=generator" width="100%"
+        height="80" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <br>【セトリ @下北沢DY CUBE】<br>
+      ⑴<a href="https://youtu.be/Z7-tJRs5MJ8">つぎのて</a><br>
+      ⑵<a href="https://youtu.be/0mpO2FfQ_XQ">12/23</a><br>
+      ⑶<a href="https://youtu.be/F8gBOixZAJY">メトロノーム</a><br>
+      ⑷<a href="https://youtu.be/uGjQPsbpcjA">SING</a><br>
+      ⑸チキンライス(カバー)<br>
+      ⑹流れ星<br>
+      ⑺水曜日(新曲)<br>
+      ⑻<a href="https://youtu.be/COAdb7RVYcE">遠音</a><br>
+      <a href="https://t.co/50XC6E3JBg">配信チケット</a><br>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">12月17日</span>
+      <p class="news">世界一受けたい授業でゆりめりのTikTokの映像が出ました！見逃し配信、TikTokでチェック!!<br>
+        <a href="https://tver.jp/lp/episodes/epvlhwwm2l?p=1289">世界一受けたい授業</a><br>
+        <a
+          href="https://www.tiktok.com/@yurimeri/video/6843676480086543618?_r=1&_t=8YFiI5JGpqD&is_from_webapp=v1&item_id=6843676480086543618">流れた動画</a>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">12月14日</span>
+      <p class="news">12月14日「今日はクリスマスイブ」を発表しました！各種サブスクで配信中です！👇<br>
+        Yuiちゃんのツイートのコメントです「約2週間で作り上げたクリスマスソング🎄🎅強行突破でした...！
+        初めてのオーケストラアレンジですがすごく素敵に仕上げることができました！✨」<br>
+        <a href="https://www.tunecore.co.jp/artists/YuriMeri">サブスクはこちらから</a>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+
+  </div>
+
+  <!--twitter埋め込み-->
   <h2 class="tweet_1">Twitter</h2>
-  <div class = "tweets">
-  <a class="twitter-timeline" data-width="350" data-height="400" href="https://twitter.com/YurixMeri?ref_src=twsrc%5Etfw">Tweets by YurixMeri</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class="twitter-timeline" data-width="350" data-height="400" href="https://twitter.com/Yui_YuriMeri?ref_src=twsrc%5Etfw">Tweets by Yui_YuriMeri</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class="twitter-timeline" data-width="350" data-height="400" href="https://twitter.com/YuriMeri_0328?ref_src=twsrc%5Etfw">Tweets by YuriMeri_0328</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class="twitter-timeline" data-width="350" data-height="400" href="https://twitter.com/vinylmusic_joqr?ref_src=twsrc%5Etfw">Tweets by vinylmusic_joqr</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+  <div class="tweets">
+    <a class="twitter-timeline" data-width="350" data-height="400"
+      href="https://twitter.com/YurixMeri?ref_src=twsrc%5Etfw">Tweets by YurixMeri</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="350" data-height="400"
+      href="https://twitter.com/Yui_YuriMeri?ref_src=twsrc%5Etfw">Tweets by Yui_YuriMeri</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="350" data-height="400"
+      href="https://twitter.com/YuriMeri_0328?ref_src=twsrc%5Etfw">Tweets by YuriMeri_0328</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="350" data-height="400"
+      href="https://twitter.com/vinylmusic_joqr?ref_src=twsrc%5Etfw">Tweets by vinylmusic_joqr</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
   <!--youtube埋め込み-->
   <h2 class="youtube">YouTube</h2>
-  <div class = "video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/TFFhBx4sGkw" title="YouTube video player" frameborder="0" z-index="-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TFFhBx4sGkw" title="YouTube video player"
+      frameborder="0" z-index="-1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
-<!--tiktok埋め込み-->
-<h2 class="tik">Tik Tok</h2>
-<div class = "tiktok">
-  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yurimeri" data-unique-id="yurimeri" data-embed-type="creator" style="max-width: 720px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@yurimeri?refer=creator_embed">@yurimeri</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-</div>
-  
+  <!--tiktok埋め込み-->
+  <h2 class="tik">Tik Tok</h2>
+  <div class="tiktok">
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yurimeri" data-unique-id="yurimeri"
+      data-embed-type="creator" style="max-width: 720px; min-width: 288px;">
+      <section> <a target="_blank" href="https://www.tiktok.com/@yurimeri?refer=creator_embed">@yurimeri</a> </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </div>
+
+  <footer>
+    <a class="footer">&copy;Ririkko</a>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-  // 現在の日時を取得する
-  function updateTime() {
-    var date = new Date();
-    var hour = date.getHours();
-    var minute = date.getMinutes();
-
-    // 日時を2桁の数字にフォーマットする
-    hour = ('0' + hour).slice(-2);
-    minute = ('0' + minute).slice(-2);
-
-    // HTMLを更新する
-    document.getElementById('hour').innerHTML = hour;
-    document.getElementById('minute').innerHTML = minute;
-  }
-
-    // 日時を1分毎に更新する
-    setInterval(updateTime, 1000);
-
-    // 初回の日時を更新する
-    updateTime();
+    const mySwiper = new Swiper('.mv01 .swiper', {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 2000,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+        waitForTransition: false,
+      },
+      followFinger: false,
+      pagination: {
+        el: '.mv01 .swiper-pagination',
+        clickable: true,
+      },
+    });
   </script>
-  
-<footer>
-  <a class="footer">&copy;Ririkko</a>
-</footer>
-
 </body>
+
 </html>
