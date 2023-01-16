@@ -329,20 +329,20 @@ footer a{
 }
 
 /*テーブル*/
-table {
+.CNT table {
   border-collapse: collapse;
   width: 100%;
   /* 幅 */
 
 }
 
-th,
+.CNT th,
 td {
   padding: 5px 15px;
   border: solid 1px #465c1a;
 }
 
-th {
+.CNT th {
   background-color: #6f8d33;
   color: #fff;
 }
@@ -356,6 +356,26 @@ th {
   text-decoration: underline
 }
 
+
+
+/*テーブル*/
+.CRY table {
+  border-collapse: collapse;
+  width: 100%;
+  /* 幅 */
+
+}
+
+.CRY th,
+td {
+  padding: 5px 15px;
+  border: solid 1px #bd7190;
+}
+
+.CRY th {
+  background-color: #FF99C2;
+  color: #fff;
+}
 
 
 .CRY {
