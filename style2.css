@@ -287,6 +287,10 @@ footer {
   margin: 1em 0;
 }
 
+footer a{
+  color: #fff;
+}
+
 #yurimeri_news {
   background: #e6df57;
   color: #fff;
