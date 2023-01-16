@@ -67,6 +67,75 @@
       <span class="demo_item anime"></span>
     </div>
   </div>
+  
+<!--りり森作品展-->
+<h2 class="denshi">りり森作品展</h2>
+<div class="l-wrapper">
+  <main>
+  
+  <div id="demo03" class="card03 l-section">
+    <div class="l-inner">
+  
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <a href="https://drive.google.com/file/d/1eV5zXYDzr6gDmkLBYzg4GbNVMmTCPuwS/view?usp=share_link" class="swiper-slide">
+            <article class="slide">
+              <div class="slide-media img-cover"><img src="C:\Users\fumic\OneDrive\デスクトップ\ririkko_portal-main\img\main\ukuzi_4.jpeg" alt=""></div>
+              <div class="slide-content">
+                <time class="slide-date" datetime="2022-10-06">2022.10.06</time>
+                <h4 class="slide-title">マンゴーケーキを食べるゆりめり</h4>
+              </div>
+            </article>
+          </a>
+          <a href="https://drive.google.com/file/d/1w02DACixAAFxQcaA5_02YBtE6Q7K8Wlf/view?usp=share_link" class="swiper-slide">
+            <article class="slide">
+              <div class="slide-media img-cover"><img src="C:\Users\fumic\OneDrive\デスクトップ\ririkko_portal-main\img\main\ukuzi_1.jpeg" alt=""></div>
+              <div class="slide-content">
+                <time class="slide-date" datetime="2022-04-23">2022.04.23</time>
+                <h4 class="slide-title">ゆりめりの活躍を願って描かれたイラスト</h4>
+              </div>
+            </article>
+          </a>
+          <a href="https://drive.google.com/file/d/1SLlAATdX-_tkuKnouh6gLG6GDJBEybJx/view?usp=share_link" class="swiper-slide">
+            <article class="slide">
+              <div class="slide-media img-cover"><img src="C:\Users\fumic\OneDrive\デスクトップ\ririkko_portal-main\img\main\ukuzi_3.jpeg" alt=""></div>
+              <div class="slide-content">
+                <time class="slide-date" datetime="2021-10-00">2021.10</time>
+                <h4 class="slide-title">ハロウィン🎃🎃🎃</h4>
+              </div>
+            </article>
+          </a>
+          <a href="https://drive.google.com/file/d/1snDJD_DMtItBNkZNcGnbiI62TJ1Xl5gT/view?usp=share_link" class="swiper-slide">
+            <article class="slide">
+              <div class="slide-media img-cover"><img src="C:\Users\fumic\OneDrive\デスクトップ\ririkko_portal-main\img\main\ukuzi_5.jpeg" alt=""></div>
+              <div class="slide-content">
+                <time class="slide-date" datetime="2021-10-05">2021.10.05</time>
+                <h4 class="slide-title">ゆりめりストリーミングデビュー2周年</h4>
+              </div>
+            </article>
+          </a>
+          <a href="https://drive.google.com/file/d/1mSBFDIDLheqWBUfHcsadOfnsIhAYcF-u/view?usp=share_link" class="swiper-slide">
+            <article class="slide">
+              <div class="slide-media img-cover"><img src="C:\Users\fumic\OneDrive\デスクトップ\ririkko_portal-main\img\main\ukuzi_2.jpg" alt=""></div>
+              <div class="slide-content">
+                <time class="slide-date" datetime="2021-08-22">2021.08.22</time>
+                <h4 class="slide-title">コンサート後、バーに集合</h4>
+              </div>
+            </article>
+          </a>
+          
+        </div><!-- /swiper-wrapper -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!-- /swiper -->
+  
+    </div>
+  </div>
+  
+  </main>
+  </div><!-- /wrapper -->
+  
+  
   <!--りり森通信電子版-->
 
   <h2 class="denshi">りり森通信電子版</h2>
@@ -132,6 +201,36 @@
       },
     });
   </script>
+  
+  <script>
+  const mSwiper = new Swiper('.card03 .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    loopAdditionalSlides: 1,
+    speed: 1000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    grabCursor: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.card03 .swiper-button-next',
+      prevEl: '.card03 .swiper-button-prev',
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 32,
+      }
+    },
+  });
+</script>
+  
 </body>
 
 </html>
