@@ -314,6 +314,13 @@ footer a{
   border: 1px dashed white;
 }
 
+.denshi_y {
+  background: #FF99C2;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px dashed white;
+}
+
 .sound_landscape {
   background: #eeb855;
   color: #fff;
@@ -348,6 +355,19 @@ th {
 .CNT a {
   text-decoration: underline
 }
+
+
+
+.CRY {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+.CRY a {
+  text-decoration: underline
+}
+
+
 
 .RIRIMORI a {
   text-decoration: underline
