@@ -80,28 +80,31 @@
     //standfm処理用12月10日を基準とする
     var start = new Date("2022-12-10");
     //イベントごとに更新する
-    var target1 = new Date("2022-12-14");
-    var target2 = new Date("2023-02-20");
+    var target1 = new Date("2023-04-16");
+    var target2 = new Date("2023-04-18");
+    var target3 = new Date("2023-09-15");
 
     //今日の日付を取得
     var today = new Date();
     // 「ヴァイナルミュージックの日です」を表示する
-    if (today.getDay() === 4) {
-      document.write("ヴァイナルミュージックの日です");
-    }
+    //if (today.getDay() === 4) {
+     // document.write("ヴァイナルミュージックの日です");
+   // }
     // 「standfmの日です」を表示する
     else if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
       document.write("standfmの日です");
     }
     else if (today.toDateString() === target1.toDateString()) {
-      document.write("今日はゆりめり新曲のクリスマスソング発表日です");
+      document.write("今日はKNOCKOUT FES@下北沢の日です！！");
     }
     //ここはイベントごとに更新する
     // 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
     else if (today.toDateString() === target2.toDateString()) {
-      document.write("「下北沢DY CUBE」でのスリーマンライブ出演");
+      document.write("今日はRose Plant@渋谷duoの日です！！");
     }
-
+    else if (today.toDateString() === target3.toDateString()) {
+      document.write("今日は待ちに待ったワンマンライブ！@青山月見ル君想フ の日です！！");
+    }
     else {
       document.write("イベントはありません");
     }
@@ -112,13 +115,90 @@
 
   <h2 id="yurimeri_news">ゆりめりNEWS!!📢</h2>
   <div class="box">
+     <div class="box26">
+      <span class="box-title">2023.3.21</span>
+      <p class="news">叶匠寿庵 寿長生の郷 梅まつりでライブを実施
+        <br>【セトリ @下北沢DY CUBE】<br>
+     【第一部】<br>
+1.赤いスイートピー<br>
+2.つぎのて<br>
+3.カントリーロード<br>
+4.昭和歌謡メドレー<br>
+   -中央フリーウェイ<br>
+   -プラスチック・ラブ<br>
+   -真夜中のドア<br>
+5.水曜日<br>
+6.遠音<br>
+EN<br>
+7.キラキラ<br><br>
+【第二部】<br>
+1.春よ、来い<br>
+2.Stay Home<br>
+3.いのちの名前<br>
+4.昭和歌謡メドレー<br>
+   -中央フリーウェイ<br>
+   -プラスチック・ラブ<br>
+   -真夜中のドア<br>
+5.じゃんけん<br>
+6.遠音<br>
+EN<br>
+7.SING<br>
+      </p>  　
+    </div>
+    <!--NEWSここまで-->
     <!--NEWS-->
     <div class="box26">
-      <span class="box-title">12月23日速報！</span>
+      <span class="box-title">2023.3.19</span>
+      <p class="news">叶匠寿庵 寿長生の郷 梅まつりでライブを実施
+        <br>【セトリ @下北沢DY CUBE】<br>
+     【第一部】<br>
+1.春よ、来い(Cover)<br>
+ MC<br>
+2.つぎのて<br>
+3.朝ごはんの歌(Cover)<br>
+MC<br>
+3.昭和歌謡メドレー(Cover)<br>
+   -フライディ・チャイナタウン<br>
+   -異邦人<br>
+   -真夜中のドア<br>
+4.水曜日<br>
+MC <br>
+5.遠音<br>
+EN<br>
+キラキラ<br>
+【第二部】<br><br>
+1.春よ、来い(Cover)<br>
+ MC<br>
+2.アオイハル<br>
+MC<br>
+3.昭和歌謡メドレー(Cover)<br>
+   -フライディ・チャイナタウン<br>
+   -異邦人<br>
+   -真夜中のドア<br>
+4.なんでもないや<br>
+MC <br>
+5.じゃんけん<br>
+MC<br>
+6.遠音<br>
+EN<br>
+SING<br>
+      </p>  　
+    </div>
+    <!--NEWSここまで-->
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.2.20</span>
+      <p class="news">【タイキのホンキ〜「超人」×「怪獣」×「調和」のスリーマン〜】に出演しました！
+      </p>  　
+    </div>
+    <!--NEWSここまで-->
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2022.12.23 速報！</span>
       <p class="news">ゆりめり2022年ライブ納め！<b>新曲「水曜日」発表も!!</b><br>
         【ライブを振り返ろう！！】<br>
-        <a
-          href="https://youtube.com/playlist?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"><b>Youtubeでライブを振り返ろう！！</b></a><br>
+        <a 
+           href="https://youtube.com/playlist?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"><b>Youtubeでライブを振り返ろう！！</b></a><br>
       <div class="video">
         <iframe width="560" height="315"
           src="https://www.youtube.com/embed/videoseries?list=PLJFojXrgAfXCHnz62YtESbHuVJIfxWr6u"
@@ -148,7 +228,7 @@
     <!--NEWSここまで-->
     <!--NEWS-->
     <div class="box26">
-      <span class="box-title">12月17日</span>
+      <span class="box-title">2022.12.17</span>
       <p class="news">世界一受けたい授業でゆりめりのTikTokの映像が出ました！見逃し配信、TikTokでチェック!!<br>
         <a href="https://tver.jp/lp/episodes/epvlhwwm2l?p=1289">世界一受けたい授業</a><br>
         <a
@@ -159,7 +239,7 @@
     <!--NEWSここまで-->
     <!--NEWS-->
     <div class="box26">
-      <span class="box-title">12月14日</span>
+      <span class="box-title">2022.12.14</span>
       <p class="news">12月14日「今日はクリスマスイブ」を発表しました！各種サブスクで配信中です！👇<br>
         Yuiちゃんのツイートのコメントです「約2週間で作り上げたクリスマスソング🎄🎅強行突破でした...！
         初めてのオーケストラアレンジですがすごく素敵に仕上げることができました！✨」<br>
