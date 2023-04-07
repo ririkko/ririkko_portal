@@ -91,22 +91,22 @@
      // document.write("ヴァイナルミュージックの日です");
    // }
     // 「standfmの日です」を表示する
-    else if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
+    if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
       document.write("standfmの日です");
     }
     else if (today.toDateString() === target1.toDateString()) {
-      document.write("今日はKNOCKOUT FES@下北沢の日です！！");
+      document.write("今日はKNOCKOUT FES@下北沢の日です");
     }
     //ここはイベントごとに更新する
     // 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
     else if (today.toDateString() === target2.toDateString()) {
-      document.write("今日はRose Plant@渋谷duoの日です！！");
+      document.write("今日はRose Plant@渋谷duoの日です");
     }
     else if (today.toDateString() === target3.toDateString()) {
-      document.write("今日は待ちに待ったワンマンライブ！@青山月見ル君想フ の日です！！");
+      document.write("今日は待ちに待ったワンマンライブ！@青山月見ル君想フ の日です");
     }
     else if (today.toDateString() === target4.toDateString()) {
-      document.write("nanimonai！！");
+      document.write("nanimonai");
     }
     else {
       document.write("イベントはありません");
