@@ -80,9 +80,11 @@
     //standfm処理用12月10日を基準とする
     var start = new Date("2022-12-10");
     //イベントごとに更新する
-    var target1 = new Date("2023-04-16");
-    var target2 = new Date("2023-04-18");
-    var target3 = new Date("2023-09-15");
+    var target1 = new Date("2023-05-01");
+    var target2 = new Date("2023-05-14");
+    var target3 = new Date("2023-05-28");
+    var target4 = new Date("2023-06-24");
+    var target5 = new Date("2023-09-15");
     //今日の日付を取得
     var today = new Date();
     // 「ヴァイナルミュージックの日です」を表示する
@@ -93,15 +95,23 @@
     if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
       document.write("standfmの日です");
     }
+     //ここはイベントごとに更新する
     else if (today.toDateString() === target1.toDateString()) {
-      document.write("今日はKNOCKOUT FES@下北沢の日です");
+      document.write("今日はFMおたる『Let'sゴージャスMonday!』に電話出演の日です");
     }
-    //ここはイベントごとに更新する
     // 「「下北沢DY CUBE」でのスリーマンライブ出演」を表示する
     else if (today.toDateString() === target2.toDateString()) {
-      document.write("今日はRose Plant@渋谷duoの日です");
+      document.write("今日はロハスフェスタの日です");
     }
+    // 「RE:LIGHT FES2023」を表示する
     else if (today.toDateString() === target3.toDateString()) {
+      document.write("今日はRE:LIGHT FES2023の日です");
+    }
+    // 「【広島】香川裕光Birthday LIVE①〜香川裕光×ゆりめり2MAN LIVE出演」を表示する
+    else if (today.toDateString() === target4.toDateString()) {
+      document.write("今日は【広島】香川裕光Birthday LIVE①〜香川裕光×ゆりめり2MAN LIVEの日です");
+    }
+    else if (today.toDateString() === target5.toDateString()) {
       document.write("今日は待ちに待ったワンマンライブ！@青山月見ル君想フ の日です");
     }
     else {
@@ -118,6 +128,86 @@
 
   <h2 id="yurimeri_news">ゆりめりNEWS!!📢</h2>
   <div class="box">
+     <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.4.28</span>
+      <p class="news">MステにてゆりめりがVTR出演!!<br>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.4.18</span>
+      <p class="news">Rose Plant@duo Music Exchangeでライブ!!<br>
+        【セトリ】<br>
+        1.SING<br>
+        2.つぎのて<br>
+        3.水曜日<br>
+        4.ブラックアゲート<br>
+        5.遠音<br>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    
+    <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.4.16</span>
+      <p class="news">KNOCKOUTFES@下北沢DY CUBEでライブ!!<br>
+        【セトリ】<br>
+1.キャラメルナッツ<br>
+2.じゃんけん<br>
+3.キラキラ<br>
+4.ブラックアゲート<br>
+5.SING<br>
+EN.Stay Home～私の帰る場所～<br>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    
+        <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.4.6</span>
+      <p class="news">無限大∞アラカルトでライブ!!<br>
+        【セトリ】<br>
+          1.SING<br>
+          2.メトロノーム<br>
+          3.水曜日<br>
+          4.流れ星<br>
+          5.遠音<br>
+          En.キラキラ<br>
+
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    
+        <!--NEWS-->
+    <div class="box26">
+      <span class="box-title">2023.4.1</span>
+      <p class="news">道の駅マルシェin草津でライブ!!<br>
+        <a href="https://rockbaygarden.com/">ロックベイガーデン</a><br>
+        【セトリ】
+1.春よ来い (cover)<br>
+2.水曜日<br>
+3.ひまわりの約束 (cover)<br>
+4.のほほん<br>
+5.メドレー<br>
+    >恋のバカンス<br>
+    >赤いスイートピー<br>
+    >木綿のハンカチーフ<br>
+    >中央フリーウェイ<br>
+    >真夜中のドア<br>
+6.SING<br>
+7.遠音<br>
+      </p>
+      　
+    </div>
+    <!--NEWSここまで-->
+    
      <div class="box26">
       <span class="box-title">2023.3.21</span>
       <p class="news">叶匠寿庵 寿長生の郷 梅まつりでライブを実施
