@@ -49,13 +49,13 @@ nav a:hover {
 }
 
 .Tweet2 {
-  
+
   display: block;
   margin: 0 auto;
   width: 400px;
   height: 600px;
-  
-  
+
+
 }
 
 #time span {
@@ -146,6 +146,8 @@ h2 {
   /* 横幅を200pxに指定 */
   border: 1px solid #000;
   /* わかりやすくボーダーを引く */
+  /*overflow-y: scroll;*/
+  /* 縦方向にスクロール可能にする */
   background: #FFF;
 }
 
@@ -273,8 +275,6 @@ h2 {
 
 
 /*遊び*/
-
-
 footer {
   background-color: #333;
   height: 100px;
@@ -285,7 +285,7 @@ footer {
   margin: 1em 0;
 }
 
-footer a{
+footer a {
   color: #fff;
 }
 
@@ -296,7 +296,6 @@ footer a{
   border: 1px dashed white;
 }
 
-
 #day {
   padding: 3px;
   background: #999;
@@ -304,6 +303,8 @@ footer a{
   border-radius: 5px;
   border: 1px dashed white;
 }
+
+
 
 .denshi {
   background: #6f8d33;
@@ -604,6 +605,7 @@ summary {
 
 
 }
+
 /* レスポンシブ */
 @media (max-width: 400px) {
   body {
@@ -708,11 +710,12 @@ summary {
     padding: 8px;
   }
 
-	
-.googleCalendar iframe {
-  width: 100%;
-  height: 400px;
-}
+
+  .googleCalendar iframe {
+    width: 100%;
+    height: 400px;
+  }
+
   /*ここまで */
 }
 
@@ -1003,55 +1006,70 @@ main {
 .card03 {
   overflow: hidden;
 }
+
 .card03 .swiper {
   overflow: visible;
 }
-.card03 .swiper-button-prev, .card03 .swiper-button-next {
+
+.card03 .swiper-button-prev,
+.card03 .swiper-button-next {
   position: absolute;
   z-index: 1;
   top: 0;
   bottom: 0;
   margin: auto;
 }
-.card03 .swiper-button-prev::before, .card03 .swiper-button-next::before {
+
+.card03 .swiper-button-prev::before,
+.card03 .swiper-button-next::before {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: var(--box-shadow-dark);
-          box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-dark);
 }
-.card03 .swiper-button-prev::after, .card03 .swiper-button-next::after {
+
+.card03 .swiper-button-prev::after,
+.card03 .swiper-button-next::after {
   border-color: #fff;
 }
+
 .card03 .swiper-button-prev {
   right: calc(100% - 1.6rem);
 }
+
 .card03 .swiper-button-next {
   left: calc(100% - 1.6rem);
 }
+
 .card03 .slide {
   overflow: hidden;
   -webkit-transition: var(--transition), opacity 1s;
   transition: var(--transition), opacity 1s;
   border-radius: 4px;
   -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
+
 .card03 .slide-media {
   padding-top: 62.5%;
 }
+
 .card03 .slide-media img {
   height: calc(100% + 16px);
   -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
+  transform: translateY(-16px);
 }
+
 .card03 .slide-content {
   padding: 3.2rem;
 }
+
 .card03 .slide-date {
   font-size: 1.2rem;
   line-height: 1;
   display: block;
   color: var(--color-theme);
 }
+
 .card03 .slide-title {
   line-height: 1.6;
   display: -webkit-box;
@@ -1061,8 +1079,8 @@ main {
   height: 3.2em;
   margin-top: 1.6rem;
 }
+
 .card03 .swiper-slide:not(.swiper-slide-visible) .slide {
   pointer-events: none;
   opacity: 0.3;
 }
-
