@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="hkGy64eaEUmEcvT_Va9XyEZAjm54pKeRA7c1FRe3Pyc" />
+  <title>りり森ポータル</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@8/swiper.min.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <style>
+    .newsletter-summary {
+      margin-bottom: 20px;
+    }
+
+    /* ダウンロードボタンのスタイル */
+    .download-button {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      background-color: #FF99C2;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .download-button:hover {
+      background-color: #ffb6d3;
+    }
+
+    .download-button:active {
+      background-color: #FF99C2;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <div class="header">
+        <h1>りり森ポータル</h1>
+      </div>
+      <a href="https://ririkko.github.io/ririkko_portal/website.html">Home</a>
+      <a href="https://ririkko.github.io/ririkko_portal/RirikkoForest.html">Ririkko Forest</a>
+      <a href="https://ririkko.github.io/ririkko_portal/RirimoriPost.html">Ririmori Post</a>
+    </nav>
+    <div class="l-wrapper">
+      <main>
+        <div id="demo11" class="mv01 l-section">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img/main/ukuzi_4.jpeg" alt=""></div>
+                  <h2 class="slide-title">Illustrated byうくじす</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img/main/ukuzi_2.jpg" alt=""></div>
+                  <h2 class="slide-title">Illustrated byうくじす</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide-media img-cover"><img src="img/main/ukuzi_3.jpeg" alt=""></div>
+                  <h2 class="slide-title">Illustrated byうくじす</h2>
+                </div>
+              </div>
+
+            </div><!-- /swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+          </div><!-- /swiper -->
+
+
+        </div>
+
+      </main>
+    </div><!-- /wrapper -->
+
+  </header>
+
+  <div class="container">
+    <h2 class="denshi_y">りり森郵便</h2>
+
+    <div class="newsletter-summary">
+      <p>りり森郵便はりりっこが毎月発行している新聞です。このサイトでは検索データベースで過去のりり森郵便を閲覧することが可能です。</p>
+    </div>
+
+    <table class="newsletter-table" style="width:100%">
+      <thead>
+        <tr>
+          <th>年</th>
+          <th>月</th>
+          <th>ダウンロード</th>
+          <th>画像</th>
+          <th>タグ</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="newsletter-image-modal">
+    <div class="newsletter-image-modal-content">
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>
+    //ここにりり森郵便のデータを書き足していく
+    var newsletterData = [
+      { year: 2023, month: 1, file: 'りり森郵便1月号.pdf', download: 'りり森通信1月号.pdf', image: 'img/ririmori_news/RY_2023_1.jpg', tags: '成人式,めい,Mei,遠音,サブスク,リリース,インスタライブ' },
+      { year: 2023, month: 2, file: 'りり森郵便2月号.pdf', download: 'りり森郵便2月号.pdf', image: 'img/ririmori_news/RY_2023_2.jpg', tags: 'お誕生日,ゆい,Yui,ライブ,下北沢,DYCUBE' },
+      { year: 2023, month: 3, file: 'りり森郵便3月号.pdf', download: 'りり森郵便3月号.pdf', image: 'img/ririmori_news/RY_2023_3.jpg', tags: 'お誕生日,めい,Mei,叶匠寿庵,ライブ,ヴァイナルミュージック' },
+      { year: 2024, month: 4, file: 'りり森郵便4月号.pdf', download: 'りり森通信4月号.pdf', image: 'img/ririmori_news/RY_2023_4.jpg', tags: 'ライブ,下北沢,KNOCKOUTFES,TwinBox,滋賀,道の駅,マルシェ,Duomusicexcange,Mステ,ミュージックステーション' },
+      { year: 2024, month: 5, file: 'りり森郵便5月号.pdf', download: 'りり森郵便5月号.pdf', image: 'img/ririmori_news/RY_2023_5.jpg', tags: 'null' }
+    ];
+
+    $(document).ready(function () {
+      var table = $('.newsletter-table').DataTable({
+        data: newsletterData,
+        columns: [
+          { data: 'year' },
+          { data: 'month' },
+
+          {
+            data: null,
+            // ダウンロードリンクのレンダリングを修正
+            render: function (data, type, row) {
+              if (data.file !== '') {
+                return '<a href="img/ririmori_news/' + data.file + '" download="' + data.download + '" class="download-button">ダウンロード</a>';
+              } else {
+                return '';
+              }
+            }
+          },
+          {
+            data: null,
+            render: function (data, type, row) {
+              if (data.image !== '') {
+                return '<img src="' + data.image + '" alt="りり森郵便' + data.month + '月号" class="newsletter-image" data-fancybox="images" data-src="' + data.image + '">';
+              } else {
+                return '';
+              }
+            }
+          }, { data: 'tags' },
+        ],
+        responsive: true
+      });
+
+      // Initialize Fancybox for modal images
+      $("[data-fancybox='images']").fancybox({
+        transitionEffect: 'slide',
+        transitionDuration: 500,
+        arrows: true,
+        infobar: false,
+        buttons: [
+          'zoom',
+          'slideShow',
+          'fullScreen',
+          'close'
+        ],
+        idleTime: 3000
+      });
+
+      // Enable search on the "Tag" column
+      table.columns([2]).every(function () {
+        var column = this;
+        var select = $('<select><option value=""></option></select>')
+          .appendTo($(column.footer()).empty())
+          .on('change', function () {
+            var val = $.fn.dataTable.util.escapeRegex(
+              $(this).val()
+            );
+
+            column
+              .search(val ? '^' + val + '$' : '', true, false)
+              .draw();
+          });
+
+        column.data().unique().sort().each(function (d, j) {
+          select.append('<option value="' + d + '">' + d + '</option>');
+        });
+      });
+    });
+
+
+    // ダウンロードボタンクリック時のイベントリスナーを追加
+    $(document).on('click', '.download-button', function () {
+      var downloadLink = $(this).attr('href');
+      var fileName = $(this).attr('download');
+      var link = document.createElement('a');
+      link.href = downloadLink;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+
+
+  <!--りり森通信電子版-->
+
+  <h2 class="denshi">りり森通信電子版</h2>
+  <div class="RIRIMORI">
+    <a href="https://sites.google.com/view/ririmori-tsushin/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0"
+      class="site">りり森通信電子版</a>
+    <br>
+    <div class="CNT">
+      <table border="1">
+        <tr>
+          <th>年</th>
+          <th>月</th>
+          <th>ダウンロード</th>
+        </tr>
+        <tr>
+          <td rowspan="3">2022</td>
+          <td rowspan="2">11</td>
+          <td><a href="img/ririmori_news/りり森通信１１月号.pdf" download="りり森通信11月号.pdf">りり森通信11月号</a></td>
+        </tr>
+        <tr>
+          <td><a href="img/calendar/2023ゆりめりカレンダー.pdf" download="2023ゆりめりカレンダー.pdf">2023ゆりめりカレンダー</a></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><a href="img/ririmori_news/りり森通信12月号.pdf" download="りり森通信12月号.pdf">りり森通信12月号</a></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <footer>
+    <a class="footer">&copy;Ririkko</a>
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const mySwiper = new Swiper('.mv01 .swiper', {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 2000,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+        waitForTransition: false,
+      },
+      followFinger: false,
+      pagination: {
+        el: '.mv01 .swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+  <script>
+    const mSwiper = new Swiper('.card03 .swiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      grabCursor: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.card03 .swiper-button-next',
+        prevEl: '.card03 .swiper-button-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        },
+        1025: {
+          slidesPerView: 4,
+          spaceBetween: 32,
+        }
+      },
+    });
+  </script>
+
+</body>
+
+</html>
