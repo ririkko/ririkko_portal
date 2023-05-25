@@ -202,17 +202,19 @@
     });
 
 
-    // ダウンロードボタンクリック時のイベントリスナーを追加
-    $(document).on('click', '.download-button', function () {
-      var downloadLink = $(this).attr('href');
-      var fileName = $(this).attr('download');
-      var link = document.createElement('a');
-      link.href = downloadLink;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
+// ダウンロードボタンクリック時のイベントリスナーを追加
+$(document).on('click', '.download-button', function (event) {
+  // ブラウザーのデフォルトの動作をキャンセル
+  event.preventDefault();
+  var downloadLink = $(this).attr('href');
+  var fileName = $(this).attr('download');
+  var link = document.createElement('a');
+  link.href = downloadLink;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
   </script>
 
 
