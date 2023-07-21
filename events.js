@@ -82,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // 1秒ごとにカウントダウンを更新します
   setInterval(updateCountdowns, 1000);
 });
+
