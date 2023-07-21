@@ -1,5 +1,5 @@
-// ワンマンライブの日付を設定します
-var oneManLiveDate = new Date("2023-09-15");
+// ワンマンライブの日付と時間を設定します (18:00を指定)
+var oneManLiveDate = new Date("2023-09-15 18:00");
 
 // イベントごとに更新する
 var targetEvents = [
