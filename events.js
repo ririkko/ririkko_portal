@@ -45,6 +45,7 @@ function displayCountdown(targetDate, message) {
   document.write(timeRemaining.days + " 日 ");
   document.write(timeRemaining.hours + " 時間 ");
   document.write(timeRemaining.minutes + " 分 ");
+  document.write(timeRemaining.seconds + " 秒 ");
   document.write("です<br>");
 }
 
