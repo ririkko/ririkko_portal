@@ -1,12 +1,13 @@
-// standfm処理用12月10日を基準とする
-var start = new Date("2022-12-10");
+// ワンマンライブの日付を設定します
+var oneManLiveDate = new Date("2023-09-15");
 
 // イベントごとに更新する
-var target1 = new Date("2023-05-01");
-var target2 = new Date("2023-05-14");
-var target3 = new Date("2023-05-28");
-var target4 = new Date("2023-06-24");
-var target5 = new Date("2023-09-15");
+var targetEvents = [
+  new Date("2023-05-01"),
+  new Date("2023-05-14"),
+  new Date("2023-05-28"),
+  new Date("2023-06-24"),
+];
 
 // 今日の日付を取得
 var today = new Date();
@@ -36,7 +37,7 @@ function displayCountdown(targetDate, message) {
   var timeRemaining = calculateTimeRemaining(targetDate);
 
   if (!timeRemaining) {
-    document.write(message + "は終了しました");
+    document.getElementById("countdown-timer").innerHTML = message + "は終了しました";
     return;
   }
 
@@ -46,42 +47,30 @@ function displayCountdown(targetDate, message) {
   countdownString += timeRemaining.minutes + " 分 ";
   countdownString += timeRemaining.seconds + " 秒 ";
 
-  document.write(countdownString);
-}
-
-// 「standfmの日です」を表示する
-if (today >= start && (today - start) % (14 * 24 * 60 * 60 * 1000) === 0) {
-  document.write("standfmの日です<br>");
+  document.getElementById("countdown-timer").innerHTML = countdownString;
 }
 
 // カウントダウンを1秒ごとに更新する関数
 function updateCountdowns() {
   // ワンマンライブのカウントダウンを表示
-  displayCountdown(target5, "待ちに待ったワンマンライブ！@青山月見ル君想フ の日は");
+  displayCountdown(oneManLiveDate, "待ちに待ったワンマンライブ！@青山月見ル君想フ");
 
   // 直近のイベントのカウントダウンを表示
   var closestEvent = null;
   var closestEventTimeRemaining = Infinity;
-  var closestEventMessage = "";
 
-  if (today < target1) {
-    closestEvent = target1;
-    closestEventMessage = "FMおたる『Let'sゴージャスMonday!』に電話出演の日まで";
-  } else if (today < target2) {
-    closestEvent = target2;
-    closestEventMessage = "ロハスフェスタまで";
-  } else if (today < target3) {
-    closestEvent = target3;
-    closestEventMessage = "RE:LIGHT FES2023まで";
-  } else if (today < target4) {
-    closestEvent = target4;
-    closestEventMessage = "【広島】香川裕光Birthday LIVE①〜香川裕光×ゆりめり2MAN LIVEの日まで";
+  for (var i = 0; i < targetEvents.length; i++) {
+    var timeRemaining = targetEvents[i] - today;
+    if (timeRemaining > 0 && timeRemaining < closestEventTimeRemaining) {
+      closestEvent = targetEvents[i];
+      closestEventTimeRemaining = timeRemaining;
+    }
   }
 
   if (closestEvent) {
-    displayCountdown(closestEvent, closestEventMessage);
+    displayCountdown(closestEvent, "次のイベント");
   } else {
-    document.write("次のイベントはありません");
+    document.getElementById("countdown-timer").innerHTML = "次のイベントはありません";
   }
 }
 
