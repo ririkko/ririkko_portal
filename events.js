@@ -5,7 +5,7 @@ today = new Date(japanTime);
 
 // ターゲットまでの残り時間を計算する関数
 function calculateTimeRemaining(targetDate) {
-  var timeRemaining = targetDate - today;
+  var timeRemaining = targetDate.getTime() - today.getTime(); // getTime()を使ってミリ秒単位の差分を計算
   if (timeRemaining < 0) {
     return null; // ターゲット日が過ぎている場合はnullを返す
   }
@@ -22,6 +22,7 @@ function calculateTimeRemaining(targetDate) {
     seconds: seconds
   };
 }
+
 
 // カウントダウンを表示する関数
 function displayCountdown(targetDate, message, isYoutubeEvent) {
