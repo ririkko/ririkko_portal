@@ -1,5 +1,7 @@
-// 今日の日付をUTCで取得
-var today = new Date(Date.now());
+// 今日の日付を日本時間で取得
+var today = new Date();
+var japanTime = today.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" });
+today = new Date(japanTime);
 
 // ターゲットまでの残り時間を計算する関数
 function calculateTimeRemaining(targetDate) {
