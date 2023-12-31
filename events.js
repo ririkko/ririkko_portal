@@ -23,7 +23,6 @@ function calculateTimeRemaining(targetDate) {
   };
 }
 
-
 // カウントダウンを表示する関数
 function displayCountdown(targetDate, message, isYoutubeEvent) {
   var timeRemaining = calculateTimeRemaining(targetDate);
@@ -56,9 +55,9 @@ function generateEvents(startDateStr, endDateStr, intervalInDays, eventName, isY
   while (currentDate.getTime() <= new Date(endDateStr).getTime()) {
     var eventDate = new Date(currentDate);
     if (isYoutubeEvent) {
-      eventDate.setUTCHours(21); // Youtubeの公開は21時 (UTC)
+      eventDate.setHours(21); // Youtubeの公開は21時 (日本時間)
     } else {
-      eventDate.setUTCHours(22); // Podcastの開始は22時 (UTC)
+      eventDate.setHours(22); // Podcastの開始は22時 (日本時間)
     }
     events.push({
       date: eventDate,
@@ -97,4 +96,3 @@ if (closestEvent) {
 } else {
   document.write("次のイベントはありません");
 }
-
