@@ -1,16 +1,5 @@
-// ワンマンライブの日付と時間を設定します (18:00を指定)
-var oneManLiveDate = new Date("2023-09-15 19:00");
-
-// イベントごとに更新する
-var targetEvents = [
-  new Date("2023-05-01"),
-  new Date("2023-05-14"),
-  new Date("2023-05-28"),
-  new Date("2023-06-24"),
-];
-
-// 今日の日付を取得
-var today = new Date();
+// 今日の日付をUTCで取得
+var today = new Date(Date.now());
 
 // ターゲットまでの残り時間を計算する関数
 function calculateTimeRemaining(targetDate) {
@@ -33,7 +22,7 @@ function calculateTimeRemaining(targetDate) {
 }
 
 // カウントダウンを表示する関数
-function displayCountdown(targetDate, message) {
+function displayCountdown(targetDate, message, isYoutubeEvent) {
   var timeRemaining = calculateTimeRemaining(targetDate);
 
   if (!timeRemaining) {
@@ -42,6 +31,13 @@ function displayCountdown(targetDate, message) {
   }
 
   document.write(message + "まであと ");
+  if (isYoutubeEvent) {
+    // Youtubeの公開は21時なので時間を修正
+    timeRemaining.hours += 21;
+  } else {
+    // Podcastの開始は22時なので時間を修正
+    timeRemaining.hours += 22;
+  }
   document.write(timeRemaining.days + " 日 ");
   document.write(timeRemaining.hours + " 時間 ");
   document.write(timeRemaining.minutes + " 分 ");
@@ -49,23 +45,53 @@ function displayCountdown(targetDate, message) {
   document.write("です<br>");
 }
 
-// ワンマンライブのカウントダウンを表示
-displayCountdown(oneManLiveDate, "待ちに待ったワンマンライブ！@青山月見ル君想フ");
+// イベントを生成する関数
+function generateEvents(startDateStr, endDateStr, intervalInDays, eventName, isYoutubeEvent) {
+  var events = [];
+  var currentDate = new Date(startDateStr);
+
+  while (currentDate.getTime() <= new Date(endDateStr).getTime()) {
+    var eventDate = new Date(currentDate);
+    if (isYoutubeEvent) {
+      eventDate.setUTCHours(21); // Youtubeの公開は21時 (UTC)
+    } else {
+      eventDate.setUTCHours(22); // Podcastの開始は22時 (UTC)
+    }
+    events.push({
+      date: eventDate,
+      name: eventName,
+      isYoutubeEvent: isYoutubeEvent
+    });
+    currentDate.setDate(currentDate.getDate() + intervalInDays); // 指定された間隔で設定
+  }
+
+  return events;
+}
+
+// Youtubeイベントを生成
+var youtubeEvents = generateEvents("2024-01-05", "2025-12-31", 14, "Youtube公開", true);
+
+// Podcastイベントを生成
+var podcastEvents = generateEvents("2024-01-13", "2025-12-31", 14, "Podcast開始", false);
+
+// すべてのイベントを結合
+var allEvents = youtubeEvents.concat(podcastEvents);
 
 // 直近のイベントのカウントダウンを表示
 var closestEvent = null;
 var closestEventTimeRemaining = Infinity;
 
-for (var i = 0; i < targetEvents.length; i++) {
-  var timeRemaining = targetEvents[i] - today;
+for (var i = 0; i < allEvents.length; i++) {
+  var timeRemaining = allEvents[i].date.getTime() - today.getTime();
   if (timeRemaining > 0 && timeRemaining < closestEventTimeRemaining) {
-    closestEvent = targetEvents[i];
+    closestEvent = allEvents[i];
     closestEventTimeRemaining = timeRemaining;
   }
 }
 
 if (closestEvent) {
-  displayCountdown(closestEvent, "次のイベント");
+  displayCountdown(closestEvent.date, "次の" + closestEvent.name, closestEvent.isYoutubeEvent);
 } else {
   document.write("次のイベントはありません");
 }
+
