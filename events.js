@@ -45,8 +45,6 @@ function displayCountdown(targetDate, message, isYoutubeEvent) {
 //document.write(timeRemaining.minutes + " 分 ");
 //document.write(timeRemaining.seconds + " 秒 ");
 document.write("です<br>");
-
-  document.write("です<br>");
 }
 
 // イベントを生成する関数
