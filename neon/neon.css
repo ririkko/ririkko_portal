@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+#neon {
+  margin-top:20rem;
+  font-size: 70px;
+  line-height: 48px;
+  text-align: center;
+  font-family: 'Train One', cursive;
+  color: #00FF00;
+  text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
+  animation: neon 4s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon {
+  to {
+    text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFFF00, 0 0 20px #FFFF00, 0 0 25px #FFFF00, 0 0 30px #FFFF00, 0 0 35px #FFFF00;
+  }
+  }
+
+
+#neon2{
+  position: fixed; /* 要素の位置を固定する */
+bottom: 0; /* 基準の位置を画面の一番下に指定する */
+margin-bottom: 1rem;
+}
+
+
+#animationColorInput {
+  width: 100%;
+}
+
+
+body{
+background:black;
+}
+
+#neon2{
+  margin-top:60px;
+ text-align: center;
+}
+
+textarea#textInput {
+  height: 25px;
+  width: 14em;
+  font-family: sans-serif;
+  margin-bottom: -10px;
+  resize: none;
+}
+
+button#button {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+select#fontInput {
+  font-size: 1em;
+  width: 12rem;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button#fontButton {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+input#sizeInput {
+  width: 12rem;
+  margin-bottom: 10px;
+}
+
+button#sizeButton {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 11px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+input#colorInput {
+  margin-bottom: 10px;
+  width: 3em;
+}
+
+button#colorButton {
+  width: 12.9rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  margin-right: 3em;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+input#animationColorInput {
+  margin-bottom: 10px;
+  width: 3em;
+}
+
+button#animationColorButton {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-right: 3em;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+input#animationDurationInput {
+  width: 23.6em;
+  margin-bottom: 10px;
+}
+
+button#animationDurationButton {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 5px 10px ;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer
+}
+
+
+
+@media (max-width: 400px) {
+#neon {
+  margin-top:10rem;
+  font-size: 50px;
+}
+}
+
+/* レスポンシブ */
+ @media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input[type="password"], input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
